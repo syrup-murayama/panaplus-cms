@@ -1,19 +1,22 @@
 ---
-title: "Contact"
+title: "お問い合わせ"
 logo: "/img/logo.svg"
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: アクセス (薬局本部)
+    text: "〒444-0073 愛知県岡崎市能見通1-73−2 2F"
+  - heading: 営業時間
+    text: "月-金 9:00 - 18:00 ※火は14:00 - 18:00 / 土 9:00 - 13:00"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+お問合せへのご返答には、３営業日程いただくこともございます。
+ご迷惑をおかけしますが、あらかじめご了承ください。
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<h4 class="f6 b lh-title mb2">個人情報の取扱いについて</h4>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+<div class="f7 grey-4 mb3">
+お預かりした個人情報は、個人情報保護法に基づき管理いたしております。
+
+* 取得した個人情報は本人の同意なしに、目的(お問い合わせ内容への回答)以外では利用しません。
+* 本人の同意を得ずに第三者に情報を提供しません。
+* 個人情報の取扱いに関する苦情に対し、適切・迅速に対処します。
+</div>

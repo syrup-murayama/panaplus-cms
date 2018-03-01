@@ -40,6 +40,10 @@
   background-color: var(--primary);
 }
 
+.bg-subprimary {
+  background-color: var(--subprimary);
+}
+
 .bg-highlight {
   background-color: --var(--highlight);
 }
@@ -71,6 +75,8 @@
 .bg-black {
   background-color: var(--black);
 }
+
+
 
 .bg-fix-primary {
   padding: 0 var(--spacing-small);
