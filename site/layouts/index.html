@@ -2,6 +2,8 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+{{ partial "tab-menu" .Params}}
+
 {{ partial "short-text" .Params.blurb}}
 
 {{ partial "2-up" .Params }}
