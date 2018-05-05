@@ -2,7 +2,11 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "tab-menu" .Params}}
+{{ partial "tab-menu" .Params.tabs}}
+
+{{ partial "greeting" .Params.greeting }}
+
+{{ partial "your-pharmacist" .Params.yp}}
 
 {{ partial "short-text" .Params.blurb}}
 

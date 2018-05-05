@@ -3,14 +3,34 @@
   <label class="tab_item" for="business">医療・介護事業者様</label>
   <input id="recruit" type="radio" name="tab_item">
   <label class="tab_item" for="recruit">採用情報</label>
-  <div class="tab_content" id="all_content">
+  <div class="tab_content" id="business_content">
     <div class="tab_content_description">
-      <p class="c-txtsp">医療・介護事業者様向けの内容がここに入ります</p>
+      <p class="c-txtsp">{{.business.copy}}</p>
+      <ul>
+        <li><a href="#">薬剤師の在宅医療</a></li>
+        <li><a href="#">事例研究・講演発表</a></li>
+        <li><a href="#">服薬管理ロボット eお薬さん</a></li>
+        <li><a href="#">外来服薬支援（お薬の一包化）</a></li>
+        <li><a href="#">おうちクリニック (生活支援サービス)</a></li>
+        <li><a href="#">介護用品レンタル・販売</a></li>
+        <li><a href="#">介護保険適用の住宅改修</a></li>
+      </ul>
     </div>
   </div>
-  <div class="tab_content" id="programming_content">
+  <div class="tab_content" id="recruit_content">
     <div class="tab_content_description">
-      <p class="c-txtsp">採用情報の内容がここに入ります</p>
+      <p class="c-txtsp">{{.recruit.copy}}</p>
+      <ul>
+        <li><a href="#">採用情報トップ</a></li>
+        <li><a href="#">職場の雰囲気</a></li>
+        <li><a href="#">先輩スタッフの声</a></li>
+        <li><a href="#">募集要項</a></li>
+        <li><a href="#">会社見学・OB訪問</a></li>
+      </ul>
+      <a href="#">
+        <span>お問い合わせ</span>
+        <p>OB訪問・会社見学など各種お申込みもこちらから</p>
+      </a>
     </div>
   </div>
 </div>

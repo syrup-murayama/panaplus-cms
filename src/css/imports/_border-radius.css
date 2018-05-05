@@ -2,6 +2,8 @@
 
 .br1 {        border-radius: var(--border-radius); }
 
+.br2 {        border-radius: var(--border-radius2); }
+
 .br-100 {     border-radius: 100%; }
 
 .br-pill {    border-radius: 9999px; }

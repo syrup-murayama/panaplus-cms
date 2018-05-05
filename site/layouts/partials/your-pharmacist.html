@@ -1,0 +1,18 @@
+<div>
+  <label class="f2">{{.h2}}</label>
+  <div class="">
+    <div class="">
+      <h3 class="f3">{{.h3_1}}</h3>
+      <p class="">{{.text}}</p>
+      <h3 class="f3">{{.h3_2}}</h3>
+      <ul>
+        {{ range .points}}
+        <li>{{.point}}</li>
+        {{ end }}
+      </ul>
+      <div class="tc">
+			  <a href="#" class="btn raise">{{.btn}}</a>
+		  </div>
+    </div>
+  </div>
+</div>
