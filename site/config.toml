@@ -1,3 +1,5 @@
 baseurl = "/"
 languageCode = "jp"
 title = "Homepage"
+[taxonomies]
+tag = "tags"
