@@ -1,11 +1,10 @@
+<div>
 <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
 	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
-	<p class="mb0">{{ .Description }}...もっと読む</p>
+	<p class="mb0">{{ .Description }} [...]</p>
+</a>
 	<p class="mid-gray lh-title mb2">{{ .Date.Format "2006年01月02日" }}</p>
 	<ul id="tags">
-  {{ range .Tags }}
-    <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-  {{ end }}
+    <li><a href="/tags/recruit">新卒採用2019</a> </li>
 	</ul>
-
-</a>
+</div>

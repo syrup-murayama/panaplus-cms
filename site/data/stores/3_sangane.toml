@@ -1,0 +1,10 @@
+orgName = "パナプラス薬局"
+storeName = "三ヶ根店"
+image = "/img/products-grid3.jpg"
+zipcode = "444-0124"
+address = "額田郡幸田町深溝山ノ入16-1"
+tel = "0564-63-0063"
+businessday = [
+  "月〜金 9:00 - 19:00 / 土 9:00 - 13:00",
+  "日・祝は店休です。"
+]

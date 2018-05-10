@@ -1,0 +1,10 @@
+orgName = "パナプラス薬局"
+storeName = "能見店"
+image = "/img/products-grid3.jpg"
+zipcode = "444-0073"
+address = "岡崎市能見通1-73-2"
+tel = "0564-83-7601"
+businessday = [
+  "月〜金 9:00 - 18:00 ※火曜は14:00から営業",
+  "土 9:00 - 15:00"
+]

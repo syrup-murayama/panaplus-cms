@@ -1,5 +1,6 @@
 baseurl = "/"
 languageCode = "jp"
-title = "Homepage"
+title = "パナプラス薬局"
+
 [taxonomies]
-tag = "tags"
+  tag = "tags"

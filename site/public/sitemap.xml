@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/post/sample1/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sample2/</loc>
+    <lastmod>2018-05-04T05:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E3%81%93%E3%82%8C%E3%81%AF%E6%9C%80%E5%88%9D%E3%81%AE%E6%8A%95%E7%A8%BF%E3%81%A6%E3%82%99%E3%81%99/</loc>
+    <lastmod>2018-02-28T03:51:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/products/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/recruit/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/test/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/values/</loc>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+  </url>
+  
+</urlset>

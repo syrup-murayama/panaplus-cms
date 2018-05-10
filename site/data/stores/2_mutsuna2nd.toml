@@ -1,0 +1,10 @@
+orgName = "パナプラス薬局"
+storeName = "第二むつな店"
+image = "/img/products-grid3.jpg"
+zipcode = "444-0856"
+address = "岡崎市六名3-3-9"
+tel = "0564-64-4890"
+businessday = [
+  "9:00 - 19:30 / 土は9:00 - 13:00",
+  "木・日・祝は店休です。"
+]

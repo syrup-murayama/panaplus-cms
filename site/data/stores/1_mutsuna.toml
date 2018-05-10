@@ -1,0 +1,10 @@
+orgName = "パナプラス薬局"
+storeName = "むつな店"
+image = "/img/products-grid3.jpg"
+zipcode = "444-0848"
+address = "岡崎市向山町2-28"
+tel = "0564-58-2777"
+businessday = [
+  "月〜金 9:00 - 19:00 ※水曜は17:00迄",
+  "土 9:00 - 15:00"
+]
