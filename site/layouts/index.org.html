@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+
+{{ partial "tab-menu" .Params.tabs}}
+
+{{ partial "greeting" .Params.greeting }}
+
+{{ partial "your-pharmacist" .Params.yp}}
+
+{{ partial "blog" . }}
+
+{{ partial "stores" .  }}
+
+{{ partial "short-text" .Params.blurb}}
+
+{{ partial "storelist" .Params }}
+
+{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "さらに詳しく" "buttonLink" "/values") }}
+
+{{ end }}

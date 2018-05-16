@@ -12,10 +12,5 @@
 
 {{ partial "stores" .  }}
 
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "storelist" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "さらに詳しく" "buttonLink" "/values") }}
 
 {{ end }}
