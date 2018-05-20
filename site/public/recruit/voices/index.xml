@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>先輩スタッフの声 on パナプラス薬局</title>
+    <link>/recruit/voices/</link>
+    <description>Recent content in 先輩スタッフの声 on パナプラス薬局</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>jp</language>
+    
+	<atom:link href="/recruit/voices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

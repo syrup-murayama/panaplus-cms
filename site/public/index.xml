@@ -41,5 +41,14 @@
 var simple = simpledata; simple.toString  これはリンクです。</description>
     </item>
     
+    <item>
+      <title>笹岡晴子</title>
+      <link>/recruit/voices/voicefrom/haruko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/recruit/voices/voicefrom/haruko/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

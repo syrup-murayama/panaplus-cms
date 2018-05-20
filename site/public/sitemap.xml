@@ -54,8 +54,28 @@
   </url>
   
   <url>
+    <loc>/recruit/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2018-05-06T05:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/recruit/voices/</loc>
+  </url>
+  
+  <url>
+    <loc>/recruit/voices/voicefrom/</loc>
+  </url>
+  
+  <url>
+    <loc>/recruit/voices/voicefrom/haruko/</loc>
+  </url>
+  
+  <url>
+    <loc>/recruit/workplace/</loc>
   </url>
   
 </urlset>
