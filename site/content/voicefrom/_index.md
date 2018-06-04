@@ -1,7 +1,5 @@
 ---
 title: "笹岡晴子"
-layout: voicefrom
-type: voicefrom
 image: /img/products-jumbotron.jpg
 heading: "パナプラス薬局で仕事をするスタッフの皆さんの、働き方、普段の暮らしについてインタビューをしてみました。"
 description: >-
@@ -11,3 +9,5 @@ topmenu:
     text: "パナプラス薬局で仕事をするスタッフの皆さんの、働き方、普段の暮らしについてインタビューをしてみました。"
 
 ---
+
+薬剤師の笹岡先生です。
