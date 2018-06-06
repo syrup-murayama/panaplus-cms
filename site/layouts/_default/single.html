@@ -1,7 +1,27 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-{{ .Content }}
+<!-- page title -->
+{{ if .Params.heading }}
+  {{ partial "page-heading" .Params}}
+{{ end }}
+
+{{ if eq .Params.id "recruit" }}
+
+  {{ partial "recruit-h2" .Params.topmenu }}
+
+  {{ partial "recruit-top-nav" . }}
+
+  {{ printf "%v" .Type}}
+
+  {{ partial "4-up" .Params }}
+
+{{ end }}
+
+
+{{ if .Content }}
+  {{ .Content }}
+{{ end }}
+
 
 
 {{ end }}

@@ -37,7 +37,7 @@
     "gulp-postcss": "^6.1.1",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
-    "netlify-cms": "^1.7.0",
+    "netlify-cms": "^1.8.4",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^0.9.1",
@@ -45,13 +45,15 @@
     "react": "15.6.1",
     "uncss": "^0.14.1",
     "url-loader": "^0.5.7",
-    "webpack": "^3.0.0",
+    "webpack": "^3.12.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "gulp-inject": "^4.3.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "svg-sprite-loader": "^0.1.2"
+    "svg-sprite-loader": "^0.1.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-notify": "^3.2.0 "
   }
 }
