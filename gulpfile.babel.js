@@ -11,8 +11,8 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
-import gulpPlumber from "gulp-plumber"
-import gulpNotify from "gulp-notify"
+// import gulpPlumber from "gulp-plumber"
+// import nodeNotify from "node-notifier"
 
 
 const browserSync = BrowserSync.create();
@@ -22,6 +22,15 @@ const defaultArgs = ["-d", "../dist", "-s", "site"];
 if (process.env.DEBUG) {
   defaultArgs.unshift("--debug")
 }
+//
+// var errorHandler = function(error) {
+//     notifier.notify({
+//         message: error.message,
+//         title: error.plugin,
+//         sound: 'Glass'
+//     });
+// };
+
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
