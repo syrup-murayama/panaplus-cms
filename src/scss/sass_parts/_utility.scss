@@ -1,0 +1,113 @@
+
+@import "set";
+
+
+@mixin inner($inner,$min,$max){
+	@media screen and (min-width:$min) {
+		width: $inner;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media screen and (max-width:$max) {
+		width: 100%;
+		padding: 0 3.125%;
+	}	
+}
+
+/*--float--*/
+
+.u-fl{float:left;}  
+.u-fr{float:right;}
+.u-clear{clear:both;}
+.u-cf:after{content:"";display: block;clear: both;}
+
+/*--margin,padding--*/
+$num:"";
+$i: 100;
+@while $i > 0 {
+	@if $i < 10 {
+		$num: "0#{$i}";
+		.u-mt0#{$i} {
+			margin-top: #{$i}px 
+		}
+	}
+	@else{
+		.u-mt#{$i} {
+			margin-top: #{$i}px 
+		}
+	}
+	$i: $i - 5;
+}
+
+$num:"";
+$i: 100;
+@while $i > 0 {
+	@if $i < 10 {
+		$num: "0#{$i}";
+		.u-mb0#{$i} {
+			margin-bottom: #{$i}px 
+		}
+	}
+	@else{
+		.u-mb#{$i} {
+			margin-bottom: #{$i}px 
+		}
+	}
+	$i: $i - 5;
+}
+
+$num:"";
+$i: 50;
+@while $i > 0 {
+	@if $i < 10 {
+		$num: "0#{$i}";
+		.u-ml0#{$i} {
+			margin-left: #{$i}px 
+		}
+	}
+	@else{
+		.u-ml#{$i} {
+			margin-left: #{$i}px 
+		}
+	}
+	$i: $i - 5;
+}
+
+$num:"";
+$i: 50;
+@while $i > 0 {
+	@if $i < 10 {
+		$num: "0#{$i}";
+		.u-mr0#{$i} {
+			margin-right: #{$i}px 
+		}
+	}
+	@else{
+		.u-mr#{$i} {
+			margin-right: #{$i}px 
+		}
+	}
+	$i: $i - 5;
+}
+
+
+/*--text--*/
+
+.u-bold{font-weight:bold;}
+.u-under{text-decoration:underline}
+
+.u-tl{text-align:left;}
+.u-tc{text-align:center;}
+.u-tr{text-align:right;}
+
+/*--font-size--*/
+
+.u-font-s{font-size: $fontS;}
+.u-font-m{font-size: $fontM;}
+.u-font-l{font-size: $fontL;}
+
+
+
+
+
+

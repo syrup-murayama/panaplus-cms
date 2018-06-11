@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+//* - 1. leyout
+//		[概要]		header,footer,sidebarなどテンプレート部分に関する記述
+//		[接頭辞]		l-
+
+// - 2. utility
+//		[概要]		marginだけ、floatだけ等のclass 原則1クラスに1プロパティ
+//		[接頭辞]		u-
+
+// - 3. pc-only,sp-only
+//		[概要]		pc閲覧時のみ表示するclass,sp閲覧時のみ表示するclass
+
+// - 4. module
+//		[概要]		使いまわしを想定したclass
+//		[接頭辞]		m-
+
+// - 5. page
+//		[概要]		各ページ毎の記述
+
+
+@import "sass_parts/set";
+@import "sass_parts/parts";
+@import "sass_parts/js";
+@import "sass_parts/const";
+
+
+/*-------------------------------------------------------
+1.leyout 
+--------------------------------------------------------*/
+
+html{
+	font-family: $fontBase;
+	line-height: $line-height;
+	font-size: 62.5%;//10px
+    color: #272025;
+}
+
+@import "contents/lo";
+
+
+/*-----------------------------------------------------
+2.utility
+------------------------------------------------------*/
+
+@import "sass_parts/utility";
+
+//@include tab();
+//@include accordion();
+//@include youtube();
+@include gmap(56.25%);
+.gmap{
+    margin: 20px -8%;
+    @include pc($pch) {
+        margin: 60px 0 40px 0;
+    } 
+}
+
+/*-----------------------------------------------------
+3.sp pc
+------------------------------------------------------*/
+
+@import "sass_parts/only";
+
+/*-----------------------------------------------------
+4.module
+------------------------------------------------------*/
+
+@import "contents/module";
+
+/*-----------------------------------------------------
+5.page
+------------------------------------------------------*/
+
+@import "contents/page";
+@import "contents/store";
+@import "contents/contact";
+@import "contents/single";
+
+/*-----------------------------------------------------
+6.js
+------------------------------------------------------*/
+
+.js-tab-cnt:not(:first-of-type){
+	display: none;
+}
+
+@import "contents/ie";

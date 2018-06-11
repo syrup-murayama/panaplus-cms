@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+@mixin drawer($direction,$size) {
+	display: block !important;
+	position: fixed;
+	#{$direction}: -$size;
+	width: $size !important;
+	top: 0;
+	transition: $direction .5s; 
+	&--show{
+		#{$direction}: 0;
+	}	
+}
+
+@mixin tab() {
+	.js_tabBox{
+		&:not(:first-of-type){
+			display: none;
+		}
+	}
+}
+
+@mixin accordion(){
+	.accordion{
+		> dd{
+			display: none;
+		}
+	}
+}
+
+@mixin youtube(){
+	.youtube {
+	  position: relative;
+	  width: 100%;
+	  padding-top: 56.25%;
+	  	iframe{
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  width: 100% !important;
+		  height: 100% !important;	  		
+	  	}
+	}
+}
+
+@mixin gmap($tateyoko){
+	.gmap {
+		position: relative;
+		padding-bottom:$tateyoko;
+		height: 0;
+		overflow: hidden;
+			iframe,object,embed{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;			
+			}
+	}
+}

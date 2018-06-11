@@ -1,0 +1,59 @@
+
+.store{
+    &-main{
+        img{
+            width: 100%;
+            max-width: auto;
+        }
+    }
+    &-detail{
+        text-align: center;
+        &__address{
+            margin-bottom: 1em;
+        }
+        &__contact-01{
+            display: inline-block;
+            padding-left: 1.5em;
+            background: url("../img/store/ico-tel.png") no-repeat left center;
+            font-size: 3.2rem;
+            @include pc($pch) {
+                margin-bottom: .5em;
+                padding-left: 40px;
+                font-size: 4rem;
+            } 
+        }
+        &__contact-02{
+            margin-bottom: 1.5em;
+            @include pc($pch) {
+                margin-bottom: 3em;
+                font-size: 2.4rem;
+            } 
+        }
+        &__time{
+            overflow: hidden;
+            margin-bottom: 1.5em;
+            @include pc($pch) {
+                margin-bottom: 3em;
+            } 
+            dt{
+                font-weight: bold;
+                font-size: 1.8rem;
+                @include pc($pch) {
+                    margin-bottom: 1em;
+                    font-size: 2.4rem;
+                } 
+            }
+            dd{
+                width: 8.5em;
+                margin: auto;
+                text-align: left;
+                @include pc($pch) {
+                    float: left;
+                    display: block;
+                    width: 25%;
+                    padding: 5px 0;
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@charset "utf-8";
+.l{
+    &-header{
+        padding: 5px 0 20px 0;
+        border-top: 10px solid $baseC;
+        @include pc($pch) {
+            padding: 10px 0 40px 0;
+        } 
+        &-inner{
+            padding: 0 3%;
+            @include pc($pch) {
+                padding: 0 15px;
+            } 
+        }
+        &-ttl{
+            font-size: 1rem;
+            text-align: center;
+            @include pc($pch) {
+                font-size: 1.2rem;
+                text-align: left;
+            } 
+        }
+        &-row{
+            position: relative;
+            padding: 20px 0 15px 0;
+            &__img{
+                position: absolute;
+                left: 0;
+                @include pc($pch) {
+                    height: 42px;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                } 
+            }
+        }
+        &-logo{
+            width: 66%;
+            margin: auto;
+            text-align: center;
+        }
+        &-retrun{
+            width: 18px;
+        }
+    }
+    &-gnav{
+        ul{
+            display: flex;
+            -webkit-justify-content: space-around;
+                    justify-content: space-around;
+            @include pc($pch) {
+                -webkit-justify-content: center;
+                        justify-content: center;
+            } 
+            li{
+                a{
+                    display: block;
+                    font-size: 1.2rem;
+                    @include iphone5() {
+                        font-size: 1rem;
+                    } 
+                    @include pc($pch) {
+                        padding: 0 2em;
+                        font-size: 1.6rem;
+                    } 
+                    &:before{
+                        content: "〇";
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+    &-contents{
+        font-size: 1.6rem;
+        color: #272025;
+        @include pc($pch) {
+            width: 960px;
+            margin: auto;
+        } 
+    }
+    /*--line-space--*/
+    &-line-space{
+        padding: 20px 0 10px 0;
+        background: #EBF5EC;
+        @include pc($pch) {
+            padding: 60px 0 60px 0;
+        } 
+        dt{
+            width: 230px;
+            margin: 0 auto 10px auto;
+        }
+        dd{
+            width: 90%;
+            max-width: 350px;
+            margin: auto;
+            @include pc($pch) {
+                width: 200px;
+            } 
+        }
+    }
+    /*--footer--*/
+    &-footer{
+        padding: 50px 3.125% 10px 3.125%;
+        background: #707070;
+        color: #fff;
+        font-size: 1.1rem;
+        text-align: center;
+        @include pc($pch) {
+            padding: 50px 15px 30px 15px;
+            font-size: 1.4rem;
+        } 
+        &-logo{
+            width: 168px;
+            margin: 40px auto 45px auto;
+        }
+        &-nav{
+            width: 90%;
+            margin: 0 auto;
+            ul{
+                display: flex;
+                -webkit-justify-content: space-around;
+                        justify-content: space-around;      
+                @include pc($pch) {
+                    -webkit-justify-content: center;
+                            justify-content: center;
+                }           
+                li{
+                    @include pc($pch) {
+                        padding: 0 2em;
+                    } 
+                }
+            }
+        }
+    }
+    &-pagettl{
+        //@each $i in $pageName {.pageTtl-#{$i} {background-image: url("../images/#{$i}/pageTtl.png");}}
+    }
+}

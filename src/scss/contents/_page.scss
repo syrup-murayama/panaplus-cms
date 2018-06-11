@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+.main-img{
+    padding: 50px;
+    background: url("../img/main-img.png") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    @include pc($pch) {
+        margin-bottom: 50px;
+        padding: 100px 50px;
+        text-align: center;
+    } 
+    &__ttl{
+        margin-bottom: 0.5em;
+        color: $subC;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: bold;
+        line-height: 1.4;
+        @include pc($pch) {
+            margin-bottom: 1em;
+            font-size: 4rem;
+        } 
+    }
+    &__txt{
+        margin-bottom: 1.5em;
+        font-size: 1.3rem;
+        @include pc($pch) {
+            margin-bottom: 2.5em;
+            font-size: 1.8rem;
+        } 
+    }
+}
+
+.category{
+    &-nav{
+        display: flex;
+        &__switch{
+            width: 50%;
+            padding: 1em .5em;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-family: $fontBold;
+            cursor: pointer;
+            @include pc($pch) {
+                font-size: 2rem;
+            } 
+            &--01{
+                background:$subC;
+            }
+            &--02{
+                background:$pink;
+            }
+        }
+    }
+    &-lead{
+        margin-bottom: 2em;
+        font-weight: bold;
+        font-family: $fontBold;
+        @include pc($pch) {
+            max-width: 90%;
+            margin: 0 auto 2em auto;
+        } 
+    }
+    &-list{
+        margin-bottom: 1.5em;
+    }
+}
+
+.greeting{
+    max-width: 90%;
+    margin: auto;
+    &-ttl{
+        margin-bottom: 1em;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        @include pc($pch) {
+            font-size: 2.4rem;
+        } 
+    }
+    &-cnt{
+        margin: auto;
+        padding: 2em 2em 1em 2em;
+        border: solid 1px #707070;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        @include pc($pch) {
+            font-size: 1.6rem;
+        } 
+
+        &__name{
+            overflow: hidden;
+            margin-top: 2em;
+            @include pc($pch) {
+                margin-top: 4em;
+            } 
+            dl{
+                float: right;
+                dt{
+                    font-size: 1rem;
+                    @include pc($pch) {
+                        font-size: 1.4rem;
+                    } 
+                }
+                dd{
+                    font-size: 1.4rem;
+                    @include pc($pch) {
+                        font-size: 1.8rem;
+                    } 
+                    span{
+                        margin-right: 1em;
+                        font-size: 1rem;
+                        @include pc($pch) {
+                            font-size: 1.4rem;
+                        } 
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.relation{
+    &-lead{
+        margin-bottom: 1.5em;
+        @include pc($pch) {
+            max-width: 90%;
+            margin: 0 auto 3em auto;
+        } 
+    }
+    &-sub{
+        margin-bottom: 1em;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: $fontBold;
+        @include pc($pch) {
+            margin-bottom: 2em;
+            font-size: 2rem;
+        } 
+    }
+    &-list{
+        margin-bottom: 1.5em;
+    }
+}
+
+.topics{
+    &-ttl{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: $fontBold;
+        @include pc($pch) {
+            margin-bottom: 20px;
+            font-size: 2.4rem;
+        } 
+    }
+    &-unit{
+        font-size: 1.2rem;
+        padding: 20px 0 5px 1em;
+        border-bottom: #BCBCBC solid 1px;
+        @include pc($pch) {
+            padding: 20px 0 20px 1em;
+            font-size: 1.6rem;
+        } 
+        &__ttl{
+            position: relative;
+            margin-bottom: 0.5em;
+            padding-left: 0.25em;
+            font-size: 1.4rem;
+            @include pc($pch) {
+                font-size: 1.8rem;
+            } 
+            &:before{
+                content: "";
+                position: absolute;
+                left: -1em;
+                top: 3px;
+                width: 1em;
+                height: 1em;
+                -webkit-border-radius: 1em;
+                        border-radius: 1em;
+                background: $baseC;
+                @include pc($pch) {
+                    top: 4px;
+                } 
+            }
+        }    
+        &__txt{
+            margin-bottom: 1em;
+        }
+        &__time{
+            -webkit-align-self: center;
+                    align-self: center;
+        }
+        &__tag{
+            -webkit-align-self: center;
+                    align-self: center;            
+            li{
+                display: inline-block;
+                margin: 0 5px;
+                padding: .5em 1.5em;
+                line-height: 1;
+                -webkit-border-radius: 5px;
+                        border-radius: 5px;
+                background: #FFFDDB;
+                text-align: center;
+                a{
+                    font-weight: bold;
+                }
+            }
+        } 
+        &__row{
+            display: flex;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+               
+        }
+    }
+}
+
+.store-info{
+    &-row{
+        @include pc($pch) {
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            padding-top: 60px;
+            &__col{
+                width: 48%;
+            }
+        } 
+    }
+    &-unit{
+        padding-bottom: 20px;
+        @include pc($pch) {
+            padding-bottom: 60px;
+        } 
+        &__ttl{
+            margin-bottom: 1em;
+            padding-top: 1em;
+            font-weight: bold;
+            font-size: 1.8rem;
+            text-align: center;
+            @include pc($pch) {
+                font-size: 2.4rem;
+            } 
+        }
+        &__address{
+            margin-bottom: 1em;
+            @include pc($pch) {
+                margin-bottom: 2em;
+                text-align: center;
+            } 
+        }
+        &__contact{
+            width: 100%;
+            display: flex;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            @include pc($pch) {
+                -webkit-justify-content: center;
+                        justify-content: center;
+            } 
+            li{
+                width: 8em;
+                @include pc($pch) {
+                    width: 12em;
+                    margin: 0 1em;
+                } 
+            }
+        }
+        &__btn{
+            display: block;
+            padding: 1em;
+            line-height: 1;
+            border: 2px solid $baseC;
+            text-align: center;
+            font-size: 1.2rem;
+            @include pc($pch) {
+                font-size: 1.6rem;
+            } 
+            &--tel{
+                -webkit-border-radius: 5px;
+                        border-radius: 5px;
+                color: $baseC;
+            }
+            &--detail{
+                background: $baseC;
+                color: #fff;
+            }
+        }        
+    }
+}

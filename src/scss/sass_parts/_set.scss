@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@mixin pc($size){
+  @media all and (min-width: $size) {
+    @content;
+  }
+}
+@mixin sp($size){
+  @media all and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin tb(){
+  @media all and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin iphone5(){
+  @media all and (max-width: 374px) {
+    @content;
+  }
+}
+
+

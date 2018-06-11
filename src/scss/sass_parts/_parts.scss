@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+@mixin center01{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+@mixin center02{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);		
+}
+
+@charset "utf-8";
+
+
+//ページャー
+@mixin pager() {
+  position: relative;
+  overflow: hidden;
+  	ul{
+		  position: relative;
+		  left: 50%;
+		  float: left; 
+		  	li{
+				position: relative;
+				left: -50%;
+				float: left;
+					a{
+					  display: block;
+					  margin: 0 2px;
+					}	  		 
+		  	}
+  	}
+}
+
+
+@mixin numList{
+	margin-left: 1.5em;
+	list-style: decimal;
+}
+
+@mixin arrow{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border-style: solid;
+    }
+}
+
+@mixin arrow-right($tate,$yoko,$color){
+    &:before{
+        top: 0;
+        bottom: 0;
+        border-width: $tate /2  0 $tate / 2 $yoko;
+        border-color: transparent transparent transparent $color;
+    }
+}
+@mixin arrow-left($tate,$yoko,$color){
+    &:before{
+        top: 0;
+        bottom: 0;
+        border-width: $tate /2  $yoko $tate / 2 0;
+        border-color: transparent $color transparent transparent ;
+    }
+}
+@mixin arrow-top($tate,$yoko,$color){
+    &:before{
+        left:0;
+        right: 0;
+        border-width: 0 $tate /2 $yoko $tate / 2 ;
+        border-color: transparent transparent $color transparent ;
+    }
+}
+@mixin arrow-bottom($tate,$yoko,$color){
+    &:before{
+        left:0;
+        right: 0;
+        border-width:$yoko $tate /2 0 $tate / 2 ;
+        border-color: $color transparent transparent transparent ;
+    }
+}
+
+

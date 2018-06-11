@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@if $siteType == RWD {
+    .sp-only{
+        @include pc($pch) {display: none !important;}
+    }
+
+    .pc-only{
+        @include sp($sph) {display: none !important;}
+    }
+}

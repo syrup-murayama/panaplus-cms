@@ -1,0 +1,85 @@
+@charset "utf-8";
+//サイト設定
+////////////////////////////
+$siteType:RWD;//RWD or PC or SP
+$pageName: room, onsen, cuisine,faclilty,aroma,season,access,news;
+
+//z-index
+////////////////////////////
+$z-index: slider, drawer;
+
+//pcサイト幅
+////////////////////////////
+$siteW:980px;
+
+//SP余白
+////////////////////////////
+$spPd:3.125%;
+
+//pc-sp切り替え点
+////////////////////////////
+$pch:768px;
+$sph:767px;
+
+//font-family
+////////////////////////////
+$fontBase:
+-apple-system,
+BlinkMacSystemFont,
+"游ゴシック Medium",
+"Yu Gothic Medium",
+YuGothic,
+"Helvetica Neue",
+Verdana,
+Meiryo,
+"M+ 1p",
+sans-serif;
+$fontMin:"Hiragino Mincho ProN",
+"Hiragino Mincho Pro",
+"游明朝",
+YuMincho,
+"ＭＳ 明朝",
+serif;
+$lato:'Lato',
+sans-serif;
+
+$fontBold:
+-apple-system,
+BlinkMacSystemFont,
+"游ゴシック",
+"Yu Gothic",
+YuGothic,
+"Helvetica Neue",
+Verdana,
+Meiryo,
+"M+ 1p",
+sans-serif;
+$fontMin:"Hiragino Mincho ProN",
+"Hiragino Mincho Pro",
+"游明朝",
+YuMincho,
+"ＭＳ 明朝",
+serif;
+$lato:'Lato',
+sans-serif;
+
+//font-size
+////////////////////////////
+$fontSS:1rem;
+$fontS:1.2rem;
+$fontM:1.6rem;
+$fontL:1.8rem;
+$fontLL:2.0rem;
+
+//line-height
+////////////////////////////
+
+$line-height:1.6;
+
+//color
+////////////////////////////
+
+$baseC:#7FBF34;
+$subC:#009250;
+$pink:#E6855E;
+$yellow:#E4E80F;

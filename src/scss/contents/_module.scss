@@ -1,0 +1,199 @@
+.m{
+
+    /*--btn--*/
+    &-btn{
+        display: block;
+        margin: auto;
+        padding: .5em;
+        text-align: center;
+        background: $baseC;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.4rem;
+        @include pc($pch) {
+            font-size: 1.8rem;
+        } 
+        &--size-m{
+            width: 12em;
+        }
+        &--size-full{
+            width: 100%;
+            padding: 1em;
+            font-size: 1.8rem;
+            @include pc($pch) {
+                max-width: 375px;
+            } 
+        }
+        &--pink{
+            color: $pink;
+            background: #fff;
+        }
+    }
+    &-contact-btn{
+        display: block;
+        padding: .75em 1em .5em 1em;
+        background:$pink;
+        color: #fff;
+        text-align: center;
+        @include pc($pch) {
+            width: 375px;
+            margin: auto;
+        } 
+        span{
+            display: block;
+        }
+        &__01{
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+        &__02{
+            font-size: 1.1rem
+        }
+    }
+
+    /*--ttl--*/
+    &-ttl{
+        padding: 1.25em;
+        background:$baseC;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #272025;
+        line-height: 1;
+        color: #fff;
+        @include pc($pch) {
+            padding: 1em;
+            font-size: 2.4rem;
+        } 
+        &--yellow{
+            background:#E4E80F;
+            color: #272025;
+        }
+
+    }
+
+    /*--nav,list--*/
+    &-list{
+        @include pc($pch) {
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            max-width: 90%;
+            margin: auto;
+        } 
+        li{
+            margin-bottom: 10px;
+            padding: 1em;
+            background: #B3E5A1;
+            font-weight: bold;
+            font-size: 1.6rem;
+            font-family: $fontBold;
+            @include pc($pch) {
+                width: 49%;
+                text-align: center;
+            } 
+            a{
+                font-size: inherit;
+                font-weight: inherit;
+            }
+        }
+        &--yellow{
+            li{
+                background: #FFFDDB;
+            }
+        }
+        &--pink{
+            li{
+                border: solid 2px #E6855E;
+                background: #FFF;
+            }
+        }
+    }
+    &-photo-list{
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        @include pc($pch) {
+
+        } 
+        li{
+            width: calc(50% - 5px);
+            margin-bottom: 10px;
+            border: #707070 solid 1px;
+            list-style:none !important;
+            @include pc($pch) {
+                width: calc(25% - 5px);
+            } 
+            img{
+                width: 100%;
+                max-width: auto;
+            }
+        }
+    }
+    /*--box,unit--*/
+    &-unit{
+        padding: 30px 0;
+        background: #EBF5EC;
+        border: 3px solid $subC;
+        @include pc($pch) {
+            padding: 50px 0;
+        } 
+        &--yellow{
+            background: #fff;
+            border-color: #E4E80F;
+        }
+        &--pink{
+            background: #fff;
+            border-color: #E6855E;
+        }
+    }
+    &-block{
+        padding: 50px 8%;
+        @include pc($pch) {
+            padding: 100px 15px;
+        } 
+    }
+    &-inner{
+        padding: 0 8%;
+        @include pc($pch) {
+            max-width: 960px;
+            margin: auto;
+            padding: 0;
+        } 
+    } 
+    &-page{
+        padding: 10px 0 70px 0;
+        @include pc($pch) {
+            padding: 20px 0 70px 0;
+        } 
+    }   
+}
+
+.title{
+    margin-bottom: 2em;
+    border-bottom: 5px solid #009250;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    @include pc($pch) {
+        font-size: 2.4rem;
+    } 
+    &--recruit{
+        border-color: $pink;
+    }
+}
+.description{
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-family: $fontBold;
+    font-size: 1.4rem;
+    @include pc($pch) {
+        font-size: 1.6rem;
+    } 
+}

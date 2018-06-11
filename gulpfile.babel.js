@@ -11,7 +11,8 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
-// import gulpPlumber from "gulp-plumber"
+import compass from "gulp-compass";
+import plumber from "gulp-plumber"
 // import nodeNotify from "node-notifier"
 
 
@@ -34,8 +35,8 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "scss", "js", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["css", "scss", "js", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -44,6 +45,18 @@ gulp.task("css", () => (
       cssnext(),
       cssnano(),
     ]))
+    .pipe(gulp.dest("./dist/css"))
+    .pipe(browserSync.stream())
+));
+
+gulp.task("scss", () => (
+  gulp.src("./src/scss/*.scss")
+    .pipe(plumber())
+    .pipe(compass({
+      config_file: 'config.rb',
+      sass: 'sass',
+      css: 'css'
+    }))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -83,7 +96,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
+gulp.task("server", ["hugo", "css", "scss", "cms-assets", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -91,6 +104,7 @@ gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["scss"]);
   gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });

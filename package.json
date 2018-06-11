@@ -50,11 +50,13 @@
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
+    "gulp-compass": "^2.1.0",
     "gulp-inject": "^4.3.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "svg-sprite-loader": "^0.1.2",
-    "gulp-plumber": "^1.2.0",
-    "node-notify": "^5.2.1"
+    "node-notify": "^5.2.1",
+    "svg-sprite-loader": "^0.1.2"
   }
 }
