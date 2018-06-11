@@ -225,6 +225,7 @@
 
 .store-info{
     &-row{
+        padding-top: 40px;
         @include pc($pch) {
             display: flex;
             -webkit-flex-wrap: wrap;

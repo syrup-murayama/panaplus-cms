@@ -112,6 +112,48 @@
             }
         }
     }
+    &-list{
+        @include pc($pch) {
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            max-width: 90%;
+            margin: auto;
+        } 
+        li{
+            margin-bottom: 10px;
+            padding: 1em;
+            background: #B3E5A1;
+            font-weight: bold;
+            font-size: 1.6rem;
+            font-family: $fontBold;
+            @include pc($pch) {
+                width: 49%;
+                text-align: center;
+            } 
+            a{
+                display: block;
+                margin: -1em;
+                padding: 1em;
+                font-size: inherit;
+                font-weight: inherit;
+            }
+        }
+        &--yellow{
+            li{
+                background: #FFFDDB;
+            }
+        }
+        &--pink{
+            li{
+                border: solid 2px #E6855E;
+                background: #FFF;
+            }
+        }
+    }    
     &-photo-list{
         display: flex;
         -webkit-flex-wrap: wrap;

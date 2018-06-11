@@ -3,8 +3,11 @@
     &-main{
         img{
             width: 100%;
-            max-width: auto;
+            max-width: none;
         }
+        @include pc($pch) {
+            margin: auto;
+        } 
     }
     &-detail{
         text-align: center;
@@ -13,12 +16,15 @@
         }
         &__contact-01{
             display: inline-block;
-            padding-left: 1.5em;
+            padding-left: 1.25em;
+            
             background: url("../img/store/ico-tel.png") no-repeat left center;
+            -webkit-background-size: .9em;
+                    background-size: .9em;
             font-size: 3.2rem;
             @include pc($pch) {
                 margin-bottom: .5em;
-                padding-left: 40px;
+                padding-left: 50px;
                 font-size: 4rem;
             } 
         }

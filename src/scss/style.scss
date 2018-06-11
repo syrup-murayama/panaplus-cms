@@ -48,10 +48,11 @@ html{
 //@include tab();
 //@include accordion();
 //@include youtube();
-@include gmap(56.25%);
+@include gmap(100%);
 .gmap{
     margin: 20px -8%;
     @include pc($pch) {
+        padding-bottom: 45%;
         margin: 60px 0 40px 0;
     } 
 }

@@ -6,6 +6,7 @@
     } 
     &-main{
         margin-bottom: 50px !important;
+        text-align: center;
         img{
             @include pc($pch) {
                 width: 100%;
@@ -106,6 +107,11 @@
                     } 
                 }
             }
+            td{
+                @include pc($pch) {
+                    text-align: left;
+                } 
+            }
         }
         &--recruit{
             h2{
@@ -190,7 +196,6 @@
         }
         li{
             margin-bottom: 10px;
-            padding: 1em;
             font-weight: bold;
             font-size: 1.6rem;
             list-style: none !important;
@@ -199,6 +204,8 @@
                 width: 49%;
             } 
             a{
+                display: block;
+                padding: 1em;
                 font-size: inherit;
                 font-weight: inherit;
             }

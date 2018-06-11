@@ -4,13 +4,21 @@
         padding: 5px 0 20px 0;
         border-top: 10px solid $baseC;
         @include pc($pch) {
-            padding: 10px 0 40px 0;
+            padding: 20px 0;
         } 
         &-inner{
             padding: 0 3%;
             @include pc($pch) {
-                padding: 0 15px;
+                display: flex;
+                -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                max-width: 960px;
+                margin: auto;
+                padding: 0;
             } 
+            @media screen and (min-width: 768px) and (max-width: 980px) {
+                padding: 0 15px;
+            }
         }
         &-ttl{
             font-size: 1rem;
@@ -22,28 +30,33 @@
         }
         &-row{
             position: relative;
-            padding: 20px 0 15px 0;
-            &__img{
-                position: absolute;
-                left: 0;
-                @include pc($pch) {
-                    height: 42px;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                } 
-            }
+            @include pc($pch) {
+                width: 40%;
+            } 
         }
         &-logo{
-            width: 66%;
+            width: 50%;
             margin: auto;
+            padding: 20px 0;
             text-align: center;
+            @include pc($pch) {
+                width: 100%;
+                max-width: 330px;
+                margin: 0;
+                padding: 10px 0 0 0;
+                text-align: left;
+            } 
+            a{
+                display: block;
+            }
         }
-        &-retrun{
-            width: 18px;
-        }
+
     }
     &-gnav{
+        @include pc($pch) {
+            -webkit-align-self: flex-end;
+                    align-self: flex-end;
+        } 
         ul{
             display: flex;
             -webkit-justify-content: space-around;
@@ -60,14 +73,23 @@
                         font-size: 1rem;
                     } 
                     @include pc($pch) {
-                        padding: 0 2em;
+                        padding: 0 1em;
                         font-size: 1.6rem;
                     } 
+                    @media screen and (min-width: 768px) and (max-width: 980px) {
+                        padding: 0 .5em;
+                        font-size: 1.5rem;
+                    }                    
                     &:before{
                         content: "〇";
                         margin-right: 3px;
                     }
                 }
+                &:last-child a{
+                    @include pc($pch) {
+                        padding-right: 0;
+                    } 
+                }                
             }
         }
     }
@@ -75,8 +97,9 @@
         font-size: 1.6rem;
         color: #272025;
         @include pc($pch) {
-            width: 960px;
+            max-width: 990px;
             margin: auto;
+            padding: 0 15px;
         } 
     }
     /*--line-space--*/

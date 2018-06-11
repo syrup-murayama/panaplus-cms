@@ -25,6 +25,26 @@
             } 
         }
     }
+    &-error{
+        position: relative;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            right: 1.5em;
+            top: 14px;
+            width: 14px;
+            height: 14px;
+            margin: auto;
+            background: url("../img/contact/ico-error.png") no-repeat right center;
+            -webkit-background-size: 14px;
+                    background-size: 14px;
+            @include pc($pch) {
+                top: 18px;
+            } 
+            
+        }
+    }
     &-check{
         margin-bottom: 2em;
         color:$pink;
@@ -53,8 +73,8 @@
         }
         input[type="checkbox"]:checked{
             background:$pink url("../img/contact/ico-check.png") no-repeat center;
-            -webkit-background-size: 1.8em;
-                    background-size: 1.8em;
+            -webkit-background-size: 1.5em;
+                    background-size: 1.5em;
         }
     }
     select::-ms-expand {
