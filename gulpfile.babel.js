@@ -11,7 +11,7 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
-import compass from "gulp-compass";
+import sass from "gulp-sass";
 import plumber from "gulp-plumber"
 // import nodeNotify from "node-notifier"
 
@@ -52,11 +52,7 @@ gulp.task("css", () => (
 gulp.task("scss", () => (
   gulp.src("./src/scss/*.scss")
     .pipe(plumber())
-    .pipe(compass({
-      config_file: 'config.rb',
-      sass: 'sass',
-      css: 'css'
-    }))
+    .pipe(sass())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
