@@ -1,28 +1,24 @@
-<div>
-  <div class="pv1 pv2-l center bg-center cover mb5" style="background-image: url('/img/samuel-zeller-483391.jpg')">
-    <div class="mw7 center ph3">
-      <div class="mw7 relative mb3 mt3 tc">
-        <h2 class="f3 f2-l b di lh-title mb3 mt3 white mw6">
-          店舗のご案内
-        </h2>
-      </div>
+<section class="store-info">
+    <h2 class="m-ttl">店舗のご案内</h2>
+    <div class="store-info-row">
+        {{ range $.Site.Data.stores }}
+        <div class="store-info-unit store-info-row__col">
+            <p><img src="{{ .image }}" alt=""></p>
+            <div class="m-inner">
+                <h3 class="store-info-unit__ttl">{{ .orgName }} {{ .storeName }}</h3>
+                <ul class="store-info-unit__address">
+                    <li>〒{{ .zipcode }} {{ .address }}</li>
+                    <li> tel: {{ .tel }}</li>
+                    {{ range .businessday }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+                <ul class="store-info-unit__contact">
+                    <li><a href="#" class="store-info-unit__btn store-info-unit__btn--detail">店舗詳細</a></li>
+                    <li><a href="tel: {{ replace .tel "-" "" }}" class="store-info-unit__btn store-info-unit__btn--tel">電話する</a></li>
+                </ul>
+            </div>
+        </div><!-- /.store-unit -->
+        {{ end }}
     </div>
-  </div>
-  <div class="bg-off-white pv4">
-  	<div class="ph3 mw7 center">
-      <div class="flex-ns flex-wrap mhn2-ns mb3">
-      {{ range $.Site.Data.stores }}
-    		<div class="ph2-ns w-50-ns mb4">
-    			<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
-          <div>{{ .orgName }} {{ .storeName }}</div>
-    			<p>〒{{ .zipcode }} {{ .address }}</p>
-          <p>電話: {{ .tel }}</p>
-          {{ range .businessday }}
-          <p>{{ . }}</p>
-          {{ end }}
-    		</div>
-      {{ end }}
-    	</div>
-    </div>
-  </div>
-</div>
+</section><!-- /.store-info -->

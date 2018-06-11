@@ -2,14 +2,13 @@
 
 .main-img{
     padding: 50px;
-    background: url("../img/main-img.png") no-repeat center;
     -webkit-background-size: cover;
             background-size: cover;
     @include pc($pch) {
         margin-bottom: 50px;
         padding: 100px 50px;
         text-align: center;
-    } 
+    }
     &__ttl{
         margin-bottom: 0.5em;
         color: $subC;
@@ -20,7 +19,7 @@
         @include pc($pch) {
             margin-bottom: 1em;
             font-size: 4rem;
-        } 
+        }
     }
     &__txt{
         margin-bottom: 1.5em;
@@ -28,7 +27,7 @@
         @include pc($pch) {
             margin-bottom: 2.5em;
             font-size: 1.8rem;
-        } 
+        }
     }
 }
 
@@ -45,7 +44,7 @@
             cursor: pointer;
             @include pc($pch) {
                 font-size: 2rem;
-            } 
+            }
             &--01{
                 background:$subC;
             }
@@ -61,7 +60,7 @@
         @include pc($pch) {
             max-width: 90%;
             margin: 0 auto 2em auto;
-        } 
+        }
     }
     &-list{
         margin-bottom: 1.5em;
@@ -78,7 +77,7 @@
         font-weight: bold;
         @include pc($pch) {
             font-size: 2.4rem;
-        } 
+        }
     }
     &-cnt{
         margin: auto;
@@ -88,33 +87,33 @@
         font-size: 1.2rem;
         @include pc($pch) {
             font-size: 1.6rem;
-        } 
+        }
 
         &__name{
             overflow: hidden;
             margin-top: 2em;
             @include pc($pch) {
                 margin-top: 4em;
-            } 
+            }
             dl{
                 float: right;
                 dt{
                     font-size: 1rem;
                     @include pc($pch) {
                         font-size: 1.4rem;
-                    } 
+                    }
                 }
                 dd{
                     font-size: 1.4rem;
                     @include pc($pch) {
                         font-size: 1.8rem;
-                    } 
+                    }
                     span{
                         margin-right: 1em;
                         font-size: 1rem;
                         @include pc($pch) {
                             font-size: 1.4rem;
-                        } 
+                        }
 
                     }
                 }
@@ -129,7 +128,7 @@
         @include pc($pch) {
             max-width: 90%;
             margin: 0 auto 3em auto;
-        } 
+        }
     }
     &-sub{
         margin-bottom: 1em;
@@ -140,7 +139,7 @@
         @include pc($pch) {
             margin-bottom: 2em;
             font-size: 2rem;
-        } 
+        }
     }
     &-list{
         margin-bottom: 1.5em;
@@ -157,7 +156,7 @@
         @include pc($pch) {
             margin-bottom: 20px;
             font-size: 2.4rem;
-        } 
+        }
     }
     &-unit{
         font-size: 1.2rem;
@@ -166,7 +165,7 @@
         @include pc($pch) {
             padding: 20px 0 20px 1em;
             font-size: 1.6rem;
-        } 
+        }
         &__ttl{
             position: relative;
             margin-bottom: 0.5em;
@@ -174,7 +173,7 @@
             font-size: 1.4rem;
             @include pc($pch) {
                 font-size: 1.8rem;
-            } 
+            }
             &:before{
                 content: "";
                 position: absolute;
@@ -187,9 +186,9 @@
                 background: $baseC;
                 @include pc($pch) {
                     top: 4px;
-                } 
+                }
             }
-        }    
+        }
         &__txt{
             margin-bottom: 1em;
         }
@@ -199,7 +198,7 @@
         }
         &__tag{
             -webkit-align-self: center;
-                    align-self: center;            
+                    align-self: center;
             li{
                 display: inline-block;
                 margin: 0 5px;
@@ -213,12 +212,12 @@
                     font-weight: bold;
                 }
             }
-        } 
+        }
         &__row{
             display: flex;
             -webkit-justify-content: space-between;
                     justify-content: space-between;
-               
+
         }
     }
 }
@@ -237,13 +236,13 @@
             &__col{
                 width: 48%;
             }
-        } 
+        }
     }
     &-unit{
         padding-bottom: 20px;
         @include pc($pch) {
             padding-bottom: 60px;
-        } 
+        }
         &__ttl{
             margin-bottom: 1em;
             padding-top: 1em;
@@ -252,14 +251,14 @@
             text-align: center;
             @include pc($pch) {
                 font-size: 2.4rem;
-            } 
+            }
         }
         &__address{
             margin-bottom: 1em;
             @include pc($pch) {
                 margin-bottom: 2em;
                 text-align: center;
-            } 
+            }
         }
         &__contact{
             width: 100%;
@@ -269,13 +268,13 @@
             @include pc($pch) {
                 -webkit-justify-content: center;
                         justify-content: center;
-            } 
+            }
             li{
                 width: 8em;
                 @include pc($pch) {
                     width: 12em;
                     margin: 0 1em;
-                } 
+                }
             }
         }
         &__btn{
@@ -287,7 +286,7 @@
             font-size: 1.2rem;
             @include pc($pch) {
                 font-size: 1.6rem;
-            } 
+            }
             &--tel{
                 -webkit-border-radius: 5px;
                         border-radius: 5px;
@@ -297,6 +296,6 @@
                 background: $baseC;
                 color: #fff;
             }
-        }        
+        }
     }
 }

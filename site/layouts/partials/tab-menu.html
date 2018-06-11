@@ -1,36 +1,44 @@
-<div class="tabs">
-  <input id="business" type="radio" name="tab_item" checked>
-  <label class="tab_item" for="business">医療・介護事業者様</label>
-  <input id="recruit" type="radio" name="tab_item">
-  <label class="tab_item" for="recruit">採用情報</label>
-  <div class="tab_content" id="business_content">
-    <div class="tab_content_description">
-      <p class="c-txtsp">{{.business.copy}}</p>
-      <ul>
-        <li><a href="#">薬剤師の在宅医療</a></li>
-        <li><a href="#">事例研究・講演発表</a></li>
-        <li><a href="#">服薬管理ロボット eお薬さん</a></li>
-        <li><a href="#">外来服薬支援（お薬の一包化）</a></li>
-        <li><a href="#">おうちクリニック (生活支援サービス)</a></li>
-        <li><a href="#">介護用品レンタル・販売</a></li>
-        <li><a href="#">介護保険適用の住宅改修</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="tab_content" id="recruit_content">
-    <div class="tab_content_description">
-      <p class="c-txtsp">{{.recruit.copy}}</p>
-      <ul>
-        <li><a href="#">採用情報トップ</a></li>
-        <li><a href="#">職場の雰囲気</a></li>
-        <li><a href="#">先輩スタッフの声</a></li>
-        <li><a href="#">募集要項</a></li>
-        <li><a href="#">会社見学・OB訪問</a></li>
-      </ul>
-      <a href="#">
-        <span>お問い合わせ</span>
-        <p>OB訪問・会社見学など各種お申込みもこちらから</p>
-      </a>
-    </div>
-  </div>
-</div>
+<section class="category">
+    <ul class="js-tab-menu category-nav">
+        <li class="category-nav__switch category-nav__switch--01">医療・介護事業者様</li>
+        <li class="category-nav__switch category-nav__switch--02">採用情報</li>
+    </ul>
+    <div class="js-tab-wrap">
+        <div class="js-tab-cnt ">
+            <div class="m-unit">
+                <div class="m-inner">
+                    <p class="category-lead">パナプラス薬局は、地域包括支援に取り組み、地域医療に貢献する医療機関を目指します。</p>
+                    <ul class="m-list category-list">
+                        <li>薬剤師の在宅医療</li>
+                        <li>事例研究・講演発表</li>
+                        <li>服薬管理ロボット</li>
+                        <li>外来服薬支援（お薬の一包化）</li>
+                        <li>おうちクリニック (生活支援サービス)</li>
+                        <li>介護用品レンタル・販売</li>
+                        <li>介護保険適用の住宅改修</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--.js-tab-cnt-->
+        <div class="js-tab-cnt">
+            <div class="m-unit m-unit--pink">
+                <div class="m-inner">
+                    <p class="category-lead">地域最多の在宅訪問患者数を受け持つ、パナプラス薬局で、地域医療への貢献に真っ向から取り組みませんか？</p>
+                    <ul class="m-list m-list--pink category-list">
+                        <li><a href="">採用情報トップ</a></li>
+                        <li><a href="">職場の雰囲気</a></li>
+                        <li><a href="">先輩スタッフの声</a></li>
+                        <li><a href="">募集要項</a></li>
+                        <li><a href="">会 社見学・OB訪問</a></li>
+                    </ul>
+                    <p>
+                        <a class="m-contact-btn" href="#">
+                            <span class="m-contact-btn__01">お問い合わせ</span>
+                            <span class="m-contact-btn__02">OB訪問・会社見学など各種お申込みもこちらから</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div><!--.js-tab-cnt-->
+    </div><!--.js-tab-wrap-->
+</section>

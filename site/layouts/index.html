@@ -2,6 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+<div class="l-contents">
 {{ partial "tab-menu" .Params.tabs}}
 
 {{ partial "greeting" .Params.greeting }}
@@ -12,5 +13,8 @@
 
 {{ partial "stores" .  }}
 
+</div><!--contents-->
+
+{{ partial "line-button" .  }}
 
 {{ end }}

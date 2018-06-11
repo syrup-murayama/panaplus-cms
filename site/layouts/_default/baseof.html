@@ -1,7 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   {{ partial "head" . }}
-  <body class="sans-serif">
+  <body>
+  <div class="l-wrapper" id="wrapper">
     {{ partial "nav" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}

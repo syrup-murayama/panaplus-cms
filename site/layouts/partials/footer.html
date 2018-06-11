@@ -1,45 +1,16 @@
-<footer class="bg-grey-3 ph3 pv4 white">
-
-	<div class="mw7 center pt3">
-
-		<div class="measure-narrow center mb4">
-
-			<img src="/img/logo-white.svg" alt="パナプラス薬局" class="db w4 center mb4 br0">
-
-
-		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 white">パナプラス薬局</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">親身な薬局へ</a></li>
-					<li><a href="/values" class="link">在宅医療</a></li>
-					<li><a href="/post" class="link">店舗紹介</a></li>
-					<li><a href="/contact" class="link">採用情報</a></li>
-					<li><a href="/contact" class="link">お問い合わせ</a></li>
-				</ul>
-			</div>
-
-
-			<div>
-				<h3 class="f4 b lh-title mb2 white">Social</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					<!--{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}-->
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					<!--{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}-->
-				</ul>
-			</div>
-
-		</div>
-	</div>
-
-</footer>
-
-{{ partial "svg" . }}
+<footer class="l-footer">
+    <div class="u-inner">
+      <p>なんでもない”ふだん”に、幸せを届ける。</p>
+      <p class="l-footer-logo"><img src="/img/footer-logo.png" alt=""></p>
+      <nav class="l-footer-nav">
+        <ul>
+            <li><a href="">&gt;&nbsp;運営会社</a></li>
+            <li><a href="">&gt;&nbsp;プライバシー</a></li>
+            <li><a href="">&gt;&nbsp;採用・募集</a></li>
+        </ul>
+      </nav>
+    </div>
+</footer><!--footer-->
 
 <script src="/app.js"></script>
 

@@ -1,14 +1,16 @@
-<div class="pa5">
-  <h3 class="f3 f3 lh-title mb1 tc">ごあいさつ</h3>
-  <div class="flex-auto w-90 ba b--solid br2 pa3 center">
-    <span>
-      {{ .text }}
-    </span>
-    <ul class="tr">
-      <li>株式会社パナドーム</li>
-      <li>代表取締役</li>
-      <li>藤井 伸昌</li>
-    </ul>
-  </div>
-
-</div>
+<section class="greeting">
+    <div class="m-block">
+        <h2 class="greeting-ttl">ごあいさつ</h2>
+        <div class="greeting-cnt">
+            <div class="greeting-cnt__box">
+                <p>{{ .text }}</p>
+            </div>
+            <div class="greeting-cnt__name">
+                <dl>
+                    <dt>株式会社パナドーム</dt>
+                    <dd><span>代表取締役</span>藤井 伸昌</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section><!-- /.greeting -->

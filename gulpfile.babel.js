@@ -35,8 +35,8 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "scss", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "scss", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "scss", "js", "jquery", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["css", "scss", "js", "jquery", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -53,7 +53,14 @@ gulp.task("scss", () => (
   gulp.src("./src/scss/*.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./src/css"))
+    .pipe(browserSync.stream())
+));
+
+gulp.task("jquery", () => (
+  gulp.src("./src/js/jquery/*.js")
+    .pipe(plumber())
+    .pipe(gulp.dest("./dist/js"))
     .pipe(browserSync.stream())
 ));
 
@@ -92,7 +99,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "scss", "cms-assets", "js", "svg"], () => {
+gulp.task("server", ["hugo", "css", "scss", "jquery", "cms-assets", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
