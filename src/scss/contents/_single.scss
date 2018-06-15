@@ -3,14 +3,14 @@
     padding-top: 10px;
     @include pc($pch) {
         padding-top: 20px;
-    } 
+    }
     &-main{
-        margin-bottom: 50px !important;
+        margin-bottom: 2em !important;
         text-align: center;
         img{
             @include pc($pch) {
                 width: 100%;
-            } 
+            }
         }
     }
     &-section{
@@ -18,7 +18,7 @@
         font-size: 1.2rem;
         @include pc($pch) {
             font-size: 1.6rem;
-        } 
+        }
         h2{
             margin-bottom: 0.5em;
             font-size: 1.8rem;
@@ -27,7 +27,7 @@
             @include pc($pch) {
                 margin-bottom: 1em;
                 font-size: 2.4rem;
-            } 
+            }
         }
         p{
             margin-bottom: 4em;
@@ -37,7 +37,7 @@
         ul{
             margin-bottom: 2em;
             li{
-                list-style: disc inside;
+                list-style: disc outside;
                 font-weight: bold;
                 font-family: $fontBold;
                 ul{
@@ -49,7 +49,7 @@
         ol{
             margin-bottom: 2em;
             li{
-                list-style: decimal inside;
+                list-style: decimal outside;
                 font-family: $fontBold;
                 font-weight: bold;
             }
@@ -66,12 +66,12 @@
             margin-bottom: 2em;
             padding: 5px;
             background: #EBF5EC;
-            white-space: pre-wrap; 
+            white-space: pre-wrap;
             @include pc($pch) {
                 padding: 10px;
                 margin-bottom: 4em;
                 font-size: 1.6rem;
-             }    
+             }
         }
         blockquote{
             margin-bottom: 2em;
@@ -85,13 +85,13 @@
             border-top: 5px solid #EBF5EC;
             @include pc($pch) {
                 margin: 4em 0;
-            } 
+            }
         }
         table{
             margin-bottom: 2em;
             @include pc($pch) {
                 margin-bottom: 4em;
-            } 
+            }
             th,td{
                 padding: 1em;
                 border: #B3E5A1 solid 1px;
@@ -104,13 +104,13 @@
                     width: 8em;
                     @include pc($pch) {
                         width: 12em;
-                    } 
+                    }
                 }
             }
             td{
                 @include pc($pch) {
                     text-align: left;
-                } 
+                }
             }
         }
         &--recruit{
@@ -131,7 +131,7 @@
             @include pc($pch) {
                 margin-bottom: 1em;
                 font-size: 2.4rem;
-            } 
+            }
         }
         &__data{
             margin-bottom: 2em;
@@ -143,7 +143,7 @@
                 @include pc($pch) {
                     margin-bottom: 1em;
                     font-size: 2rem;
-                } 
+                }
             }
             dd{
                 font-size: 3rem;
@@ -151,18 +151,18 @@
                 font-family: $fontBold;
                 @include pc($pch) {
                     font-size: 4rem;
-                }  
+                }
             }
         }
         &--recruit{
-            background: $pink; 
+            background: $pink;
         }
     }
     &-links{
         margin-bottom: 4em;
         @include pc($pch) {
             margin: 0 auto 4em auto;
-        } 
+        }
         h3{
             display: flex;
             width: 100%;
@@ -172,7 +172,7 @@
             @include pc($pch) {
                 margin-bottom: 15px;
                 height: 4em;
-            } 
+            }
             span{
                 display: block;
                 -webkit-align-self: center;
@@ -180,7 +180,7 @@
                 color: #FFF;
                 font-size: 1.6rem;
                 font-weight: bold;
-                font-family: $fontBold;                    
+                font-family: $fontBold;
             }
         }
         ul{
@@ -192,7 +192,7 @@
                         flex-wrap: wrap;
                 -webkit-justify-content: space-between;
                         justify-content: space-between;
-            } 
+            }
         }
         li{
             margin-bottom: 10px;
@@ -202,14 +202,14 @@
             border: 2px solid;
             @include pc($pch) {
                 width: 49%;
-            } 
+            }
             a{
                 display: block;
                 padding: 1em;
                 font-size: inherit;
                 font-weight: inherit;
             }
-        } 
+        }
         &--pink{
             li{
                 border-color:  $pink;
@@ -217,7 +217,7 @@
             h3{
                 background: $pink;
             }
-        }   
+        }
         &--green{
             li{
                 border-color: $subC;
@@ -225,7 +225,7 @@
             h3{
                 background: $subC;
             }
-        }    
+        }
         &--l-green{
             li{
                 border-color: $baseC;

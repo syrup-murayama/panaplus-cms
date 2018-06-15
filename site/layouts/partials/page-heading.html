@@ -1,10 +1,13 @@
-<h2>{{ .heading }}</h2>
-{{ if .description }}
-<p class="">
-  {{.description}}
-</p>
-{{ end }}
-
-{{ if .image }}
-<img src="{{.image}}" alt="">
-{{ end }}
+<header>
+    <div class="m-inner">
+        <div class="title">{{ .heading }}</div>
+        {{ if .description }}
+        <div class="description">
+            {{.description}}
+        </div>
+        {{ end }}
+    </div>
+    {{ if .image }}
+    <p class="single-main"><img src="{{.image}}" alt="{{ .heading }}"></p>
+    {{ end }}
+</header>

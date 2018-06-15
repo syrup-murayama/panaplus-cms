@@ -1,9 +1,33 @@
 {{ define "main" }}
 
+<div class="l-contents">
 <!-- page title -->
-{{ if .Params.heading }}
-  {{ partial "page-heading" .Params}}
-{{ end }}
+{{ partial "page-heading" .Params}}
+
+{{ if eq .Params.id "store" }}
+
+  <div class="store m-page">
+    <section class="store-detail">
+        <div class="m-block">
+
+  {{ partial "store-data" .Params }}
+
+  {{ partial "store-images" .Params }}
+
+  {{ partial "store-map" .Params }}
+
+
+        </div>
+    </section>
+
+  {{ partial "stores" .  }}
+
+  </div>
+</div><!--contents-->
+{{ else }}
+
+<article class="single">
+<section class="single-section">
 
 {{ if eq .Params.id "recruit" }}
 
@@ -11,17 +35,25 @@
 
   {{ partial "recruit-top-nav" . }}
 
-  
+
 
   {{ partial "4-up" .Params }}
 
 {{ end }}
 
-
+<div class="m-inner">
 {{ if .Content }}
   {{ .Content }}
 {{ end }}
+</div>
 
+</section>
 
+</article >
+</div><!--contents-->
+
+{{ partial "contact-box-medi" }}
+
+{{ end }}
 
 {{ end }}

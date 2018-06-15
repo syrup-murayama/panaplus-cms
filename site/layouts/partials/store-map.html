@@ -1,1 +1,8 @@
 <!-- goolge mapの埋め込み -->
+<div class="gmap">
+  <iframe src="{{ .gmap }}" width="930" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<dl class="store-detail__address">
+    <dt>〒{{ .zipcode }} {{ .address }}</dt>
+    <!--<dd><a href="">[地図アプリを起動で見る]</a></dd>-->
+</dl>

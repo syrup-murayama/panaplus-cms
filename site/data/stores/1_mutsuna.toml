@@ -1,6 +1,7 @@
 orgName = "パナプラス薬局"
 storeName = "むつな店"
 image = "/img/1_mutsuna.jpg"
+url = "/stores/mutsuna/"
 zipcode = "444-0848"
 address = "岡崎市向山町2-28"
 tel = "0564-58-2777"

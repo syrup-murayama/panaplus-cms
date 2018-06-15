@@ -1,11 +1,11 @@
 <section class="store-info">
-    <h2 class="m-ttl">店舗のご案内</h2>
+    <h2 class="m-ttl" id="stores">店舗のご案内</h2>
     <div class="store-info-row">
         {{ range $.Site.Data.stores }}
         <div class="store-info-unit store-info-row__col">
-            <p><img src="{{ .image }}" alt=""></p>
+            <p><a href="{{ .url }}" ><img src="{{ .image }}" alt="{{ .storeName }}"></a></p>
             <div class="m-inner">
-                <h3 class="store-info-unit__ttl">{{ .orgName }} {{ .storeName }}</h3>
+                <h3 class="store-info-unit__ttl"><a href="{{ .url }}" >{{ .orgName }} {{ .storeName }}</a></h3>
                 <ul class="store-info-unit__address">
                     <li>〒{{ .zipcode }} {{ .address }}</li>
                     <li> tel: {{ .tel }}</li>
@@ -14,7 +14,7 @@
                     {{ end }}
                 </ul>
                 <ul class="store-info-unit__contact">
-                    <li><a href="#" class="store-info-unit__btn store-info-unit__btn--detail">店舗詳細</a></li>
+                    <li><a href="{{ .url }}" class="store-info-unit__btn store-info-unit__btn--detail">店舗詳細</a></li>
                     <li><a href="tel: {{ replace .tel "-" "" }}" class="store-info-unit__btn store-info-unit__btn--tel">電話する</a></li>
                 </ul>
             </div>

@@ -1,6 +1,7 @@
 orgName = "パナプラス薬局"
 storeName = "第二むつな店"
-image = "/img/2_sangane.jpg"
+image = "/img/3_2ndmutsuna.jpg"
+url = "/stores/mutsuna-2/"
 zipcode = "444-0856"
 address = "岡崎市六名3-3-9"
 tel = "0564-64-4890"

@@ -1,0 +1,11 @@
+<p class="store-detail__contact-01"><a href="tel: {{ replace .tel "-" "" }}">{{ .tel }}</a></p>
+<ul class="store-detail__contact-02">
+    <li>FAX : {{ .fax }}</li>
+    <li>緊急 : {{ .mp }}</li>
+</ul>
+<dl class="store-detail__time">
+    <dt>営業時間</dt>
+    {{ range .businessday }}
+    <dd>{{ .day }} | {{ .time }}</dd>
+    {{ end }}
+</dl>

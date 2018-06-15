@@ -531,7 +531,6 @@ html {
     .m-photo-list li {
       width: calc(50% - 5px);
       margin-bottom: 10px;
-      border: #707070 solid 1px;
       list-style: none !important; }
       @media all and (min-width: 768px) {
         .m-photo-list li {
@@ -556,7 +555,7 @@ html {
     padding: 50px 8%; }
     @media all and (min-width: 768px) {
       .m-block {
-        padding: 100px 15px; } }
+        padding: 50px 15px; } }
   .m-inner {
     padding: 0 8%; }
     @media all and (min-width: 768px) {
@@ -864,10 +863,10 @@ html {
   .store-detail__contact-01 {
     display: inline-block;
     padding-left: 1.25em;
-    background: url("../img/store/ico-tel.png") no-repeat left center;
+    background: url("/img/ico-tel.png") no-repeat left center;
     -webkit-background-size: .9em;
     background-size: .9em;
-    font-size: 3.2rem; }
+    font-size: 3rem; }
     @media all and (min-width: 768px) {
       .store-detail__contact-01 {
         margin-bottom: .5em;
@@ -893,7 +892,7 @@ html {
           margin-bottom: 1em;
           font-size: 2.4rem; } }
     .store-detail__time dd {
-      width: 8.5em;
+      width: 10em;
       margin: auto;
       text-align: left; }
       @media all and (min-width: 768px) {
@@ -1088,7 +1087,7 @@ html {
     .single {
       padding-top: 20px; } }
   .single-main {
-    margin-bottom: 50px !important;
+    margin-bottom: 2em !important;
     text-align: center; }
     @media all and (min-width: 768px) {
       .single-main img {
@@ -1115,7 +1114,7 @@ html {
     .single-section ul {
       margin-bottom: 2em; }
       .single-section ul li {
-        list-style: disc inside;
+        list-style: disc outside;
         font-weight: bold;
         font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
         .single-section ul li ul {
@@ -1124,7 +1123,7 @@ html {
     .single-section ol {
       margin-bottom: 2em; }
       .single-section ol li {
-        list-style: decimal inside;
+        list-style: decimal outside;
         font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
         font-weight: bold; }
     .single-section figure {
