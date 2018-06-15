@@ -1,51 +1,30 @@
-<!-- Contact -->
-<div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">ご記入ください</h4>
+<form method="POST" netlify>
+    <ul class="contact-list">
+        <li>
+            <input type="text" name="Name" id="name" placeholder="お名前" >
+        </li>
+        <li>
+            <input type="tel" name="Tel" id="tel" placeholder="電話番号" >
+        </li>
+        <li>
+            <input type="email" name="Email" id="email" placeholder="メールアドレス" >
+            <!--<span>正しいメールアドレスを入力してください</span>-->
+        </li>
+        <li>
+            <input type="text" name="Organization" id="organization" placeholder="御社名・貴団体名等" >
+        </li>
+        <!--<li>
+            <div class="contact-select">
+             <select name="" id="">
+                    <option value="">問合せ項目</option>
+                </select>
+            </div>
+        </li>-->
+        <li>
+            <span class="contact-remarks">お問い合わせ内容</span>
+            <textarea name="Message" placeholder="" id="message" ></textarea>
+        </li>
+    </ul>
 
-  <form name="contact" method="POST" netlify>
-    <div class="flex-l mhn1-l">
-          <!-- Name -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" name="Name" id="name" placeholder="お名前" class="w-100 mb2">
-          <label for="name">お名前</label>
-        </fieldset>
-      </div>
-          <!-- 学校名 -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" name="Organization" id="organization" placeholder="学校名" class="w-100 mb2">
-          <label for="organization">学校名</label>
-        </fieldset>
-      </div>
-    </div>
-    <div class="flex-l mhn1-l">
-          <!-- 電話 -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" name="Tel" id="tel" placeholder="電話番号" class="w-100 mb2">
-          <label for="tel">電話</label>
-        </fieldset>
-      </div>
-          <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="email" name="Email" id="email" placeholder="メールアドレス" class="w-100 mb2">
-          <label for="email">メールアドレス</label>
-        </fieldset>
-      </div>
-    </div>
-
-
-
-        <!-- Message -->
-    <fieldset>
-      <textarea name="Message" placeholder="メッセージ" rows="8" cols="80" id="message" class="w-100"></textarea>
-      <label for="message">メッセージ</label>
-    </fieldset>
-        <!-- Button -->
-    <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">送信する</button>
-    </div>
-  </form>
-</div>
+    <button type="submit" class="contact-btn">送信する</button>
+</form>

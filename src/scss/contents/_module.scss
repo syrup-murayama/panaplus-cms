@@ -219,7 +219,7 @@
 
 .title{
     margin-bottom: 2em;
-    border-bottom: 5px solid #009250;
+    border-bottom: 5px solid $subC;
     font-weight: bold;
     font-size: 1.8rem;
     text-align: center;
@@ -228,6 +228,9 @@
     }
     &--recruit{
         border-color: $pink;
+    }
+    &--user{
+        border-color: $yellow;
     }
 }
 .description{
@@ -238,4 +241,5 @@
     @include pc($pch) {
         font-size: 1.6rem;
     }
+    text-align: center;
 }

@@ -1,6 +1,15 @@
 <header>
     <div class="m-inner">
-        <div class="title">{{ .heading }}</div>
+      {{ if eq .id "recruit" }}
+        <div class="title title--recruit">
+      {{ else }}
+        {{ if eq .id "user" }}
+          <div class="title title--user">
+        {{ else }}
+          <div class="title">
+        {{ end }}
+      {{ end }}
+          {{ .heading }}</div>
         {{ if .description }}
         <div class="description">
             {{.description}}

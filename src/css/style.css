@@ -580,12 +580,15 @@ html {
       font-size: 2.4rem; } }
   .title--recruit {
     border-color: #E6855E; }
+  .title--user {
+    border-color: #E4E80F; }
 
 .description {
   margin-bottom: 2em;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-align: center; }
   @media all and (min-width: 768px) {
     .description {
       font-size: 1.6rem; } }
@@ -904,7 +907,7 @@ html {
 
 .contact-ttl {
   margin-bottom: 2.5em;
-  border-bottom: solid 5px #E6855E;
+  border-bottom: solid 5px #009250;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold; }
@@ -913,7 +916,7 @@ html {
       font-size: 2.4rem; } }
 
 .contact-list {
-  color: #E6855E;
+  color: #009250;
   font-size: 1.1rem; }
   @media all and (min-width: 768px) {
     .contact-list {
@@ -946,7 +949,7 @@ html {
 
 .contact-check {
   margin-bottom: 2em;
-  color: #E6855E;
+  color: #009250;
   text-align: center;
   font-size: 1.1rem;
   line-height: 2;
@@ -960,7 +963,7 @@ html {
     margin-right: 5px;
     width: 2em;
     height: 2em;
-    background: #E6855E;
+    background: #009250;
     vertical-align: middle;
     border: none;
     -webkit-border-radius: 0;
@@ -969,7 +972,7 @@ html {
     -moz-appearance: none;
     appearance: none; }
   .contact-check input[type="checkbox"]:checked {
-    background: #E6855E url("../img/contact/ico-check.png") no-repeat center;
+    background: #009250 url("../img/contact/ico-check.png") no-repeat center;
     -webkit-background-size: 1.5em;
     background-size: 1.5em; }
 
@@ -999,7 +1002,7 @@ html {
   border-radius: 0;
   line-height: 42px;
   padding: 0 1.5em;
-  border: solid 1px #E6855E;
+  border: solid 1px #009250;
   color: #272025;
   font-family: inherit;
   -webkit-box-shadow: none;
@@ -1023,7 +1026,7 @@ html {
   line-height: 42px;
   margin-bottom: 10px;
   padding: 0 1.5em;
-  border: #E6855E solid 1px;
+  border: #009250 solid 1px;
   font-size: 1.2rem;
   font-family: inherit;
   -webkit-border-radius: 0;
@@ -1047,7 +1050,7 @@ html {
   width: 100%;
   height: 16em;
   padding: 1em 1.5em;
-  border: #E6855E solid 1px;
+  border: #009250 solid 1px;
   font-size: 1.2rem; }
   @media all and (min-width: 768px) {
     .contact textarea {
@@ -1060,7 +1063,7 @@ html {
   border: none;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #E6855E;
+  background: #009250;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
@@ -1079,6 +1082,185 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
   @media all and (min-width: 768px) {
     .contact-remarks {
+      text-indent: 0; } }
+
+.contact-r-ttl {
+  margin-bottom: 2.5em;
+  border-bottom: solid 5px #E6855E;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold; }
+  @media all and (min-width: 768px) {
+    .contact-r-ttl {
+      font-size: 2.4rem; } }
+
+.contact-r-list {
+  color: #E6855E;
+  font-size: 1.1rem; }
+  @media all and (min-width: 768px) {
+    .contact-r-list {
+      max-width: 768px;
+      margin: auto;
+      font-size: 1.4rem; } }
+  .contact-r-list li {
+    margin-bottom: 20px; }
+    @media all and (min-width: 768px) {
+      .contact-r-list li {
+        margin-bottom: 40px; } }
+
+.contact-r-error {
+  position: relative; }
+  .contact-r-error:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 1.5em;
+    top: 14px;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    background: url("../img/contact/ico-error.png") no-repeat right center;
+    -webkit-background-size: 14px;
+    background-size: 14px; }
+    @media all and (min-width: 768px) {
+      .contact-r-error:after {
+        top: 18px; } }
+
+.contact-r-check {
+  margin-bottom: 2em;
+  color: #E6855E;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2;
+  cursor: pointer; }
+  @media all and (min-width: 768px) {
+    .contact-r-check {
+      margin-bottom: 3em;
+      font-size: 1.4rem; } }
+  .contact-r-check input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+    width: 2em;
+    height: 2em;
+    background: #E6855E;
+    vertical-align: middle;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .contact-r-check input[type="checkbox"]:checked {
+    background: #E6855E url("../img/contact/ico-check.png") no-repeat center;
+    -webkit-background-size: 1.5em;
+    background-size: 1.5em; }
+
+.contact-r select::-ms-expand {
+  display: none; }
+
+.contact-r-select {
+  position: relative; }
+  .contact-r-select:before {
+    content: "";
+    position: absolute;
+    right: 1.5em;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    background: url("../img/contact/ico-select.svg") no-repeat center;
+    -webkit-background-size: 10px;
+    background-size: 10px; }
+
+.contact-r select {
+  width: 100%;
+  height: 42px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  line-height: 42px;
+  padding: 0 1.5em;
+  border: solid 1px #E6855E;
+  color: #272025;
+  font-family: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  @media all and (min-width: 768px) {
+    .contact-r select {
+      height: 54px;
+      line-height: 54px; } }
+  .contact-r select option {
+    color: #272025; }
+
+.contact-r input[type="text"],
+.contact-r input[type="tel"],
+.contact-r input[type="email"] {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  padding: 0 1.5em;
+  border: #E6855E solid 1px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-image: linear-gradient(#fff, #fff);
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  @media all and (min-width: 768px) {
+    .contact-r input[type="text"],
+    .contact-r input[type="tel"],
+    .contact-r input[type="email"] {
+      height: 54px;
+      line-height: 54px;
+      font-size: 1.4rem; } }
+
+.contact-r ::-webkit-input-placeholder {
+  color: #272025; }
+
+.contact-r textarea {
+  display: block;
+  width: 100%;
+  height: 16em;
+  padding: 1em 1.5em;
+  border: #E6855E solid 1px;
+  font-size: 1.2rem; }
+  @media all and (min-width: 768px) {
+    .contact-r textarea {
+      font-size: 1.6rem; } }
+
+.contact-r-btn {
+  display: block;
+  width: 100%;
+  padding: .5em;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #E6855E;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: inherit; }
+  @media all and (min-width: 768px) {
+    .contact-r-btn {
+      max-width: 376px;
+      margin: auto; } }
+
+.contact-r-remarks {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  text-indent: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
+  @media all and (min-width: 768px) {
+    .contact-r-remarks {
       text-indent: 0; } }
 
 .single {
