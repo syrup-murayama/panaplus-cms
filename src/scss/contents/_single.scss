@@ -198,6 +198,9 @@
                 font-family: $fontBold;
             }
         }
+        p{
+            width: 100%;
+        }
         ul{
             overflow: hidden;
             @include pc($pch) {

@@ -245,7 +245,7 @@
     font-weight: bold;
     font-family: $fontBase;
     font-size: 1.4rem;
-    text-align: center;
+    text-align: left;
     @include pc($pch) {
         font-size: 1.6rem;
     }
@@ -269,4 +269,36 @@
       max-width: 576px;
       max-width: 32rem;
     }
+}
+
+.application{
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: $fontM;
+  margin-bottom: 1rem;
+  span{
+    padding: 10px 20px;
+    padding: 0.5rem 1rem;
+    vertical-align: middle;
+  }
+  .label {
+    background-color: $subC;
+    color: $white;
+    width: 8em;
+    text-align: center;
+    @include pc($pch) {
+        width: 12em;
+    }
+    &--mc{
+      background-color: $baseC;
+    }
+    &--rd{
+      background-color: $yellow;
+    }
+  }
+
 }

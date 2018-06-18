@@ -83,8 +83,16 @@ html {
           padding: 0 .5em;
           font-size: 1.5rem; } }
       .l-gnav ul li a:before {
-        content: "〇";
-        margin-right: 3px; }
+        content: "";
+        margin-right: 3px;
+        width: 1em;
+        height: 1em;
+        -webkit-border-radius: 1em;
+        border-radius: 1em;
+        background: #7FBF34; }
+        @media all and (min-width: 768px) {
+          .l-gnav ul li a:before {
+            top: 4px; } }
     @media all and (min-width: 768px) {
       .l-gnav ul li:last-child a {
         padding-right: 0; } }
@@ -596,7 +604,7 @@ strong {
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
   font-size: 1.4rem;
-  text-align: center; }
+  text-align: left; }
   @media all and (min-width: 768px) {
     .description {
       font-size: 1.6rem; } }
@@ -617,6 +625,32 @@ strong {
     margin-bottom: 1rem;
     max-width: 576px;
     max-width: 32rem; }
+
+.application {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  margin-bottom: 1rem; }
+  .application span {
+    padding: 10px 20px;
+    padding: 0.5rem 1rem;
+    vertical-align: middle; }
+  .application .label {
+    background-color: #009250;
+    color: #FFFFFF;
+    width: 8em;
+    text-align: center; }
+    @media all and (min-width: 768px) {
+      .application .label {
+        width: 12em; } }
+    .application .label--mc {
+      background-color: #7FBF34; }
+    .application .label--rd {
+      background-color: #E4E80F; }
 
 /*-----------------------------------------------------
 5.page
@@ -1451,6 +1485,8 @@ strong {
         font-size: 1.6rem;
         font-weight: bold;
         font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
+    .single-links p {
+      width: 100%; }
     .single-links ul {
       overflow: hidden; }
       @media all and (min-width: 768px) {

@@ -1,5 +1,7 @@
 <!--
 募集要項のヘッダー行
 -->
-<div>薬剤師の募集</div>
-<div>むつな店</div>
+<div class="application">
+  <span class="label {{ if eq .id "mc"}}label--mc{{else if eq .id "rd"}}label--rd{{end}}">{{ .title }}</span>
+  <span>{{ .text }}</span>
+</div>

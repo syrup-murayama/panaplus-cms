@@ -81,8 +81,19 @@
                         font-size: 1.5rem;
                     }
                     &:before{
-                        content: "〇";
+                        content: "";
                         margin-right: 3px;
+                        //position: absolute;
+                        //left: -1em;
+                        //top: 3px;
+                        width: 1em;
+                        height: 1em;
+                        -webkit-border-radius: 1em;
+                                border-radius: 1em;
+                        background: $baseC;
+                        @include pc($pch) {
+                            top: 4px;
+                        }
                     }
                 }
                 &:last-child a{

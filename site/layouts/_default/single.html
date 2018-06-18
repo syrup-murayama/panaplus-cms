@@ -2,12 +2,8 @@
 
 <div class="l-contents">
 <!-- page title -->
-{{ if eq .Params.type "application" }}
-  <!-- 応募要項ページであれば、募集職種ラベルを表示する -->
-  {{ partial "application-heading" .Params.label }}
-{{ else }}
-  {{ partial "page-heading" .Params }}
-{{ end }}
+{{ partial "page-heading" .Params }}
+
 
 {{ if eq .Params.id "store" }}
 
@@ -40,6 +36,9 @@
     <div class="m-inner">
       {{ if eq .Params.type "application" }}
         <!-- 応募要項ページの記載内容 -->
+
+        <!-- 募集要項上部のラベル。不要かもしれない。 -->
+        {{ partial "application-heading" .Params.label }}
 
         {{ partial "application-table" .Params }}
 
