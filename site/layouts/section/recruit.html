@@ -5,12 +5,13 @@
 
   <article class="single">
   <section class="single-section single-section--recruit">
-
+    <div class="m-inner">
+      
     {{ partial "recruit-top-nav" .  }}
 
     {{ partial "page-heading" .Params.blurbs }}
 
-    <div class="m-inner">
+
     {{ if .Content }}
       {{ .Content }}
     {{ end }}
