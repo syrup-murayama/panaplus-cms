@@ -1,0 +1,8 @@
+<table>
+    {{ range .table }}
+    <tr>
+        <th>{{ .label }}</th>
+        <td>{{ markdownify .text }}</td>
+    </tr>
+    {{ end }}
+</table>

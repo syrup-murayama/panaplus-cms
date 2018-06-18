@@ -2,7 +2,12 @@
 
 <div class="l-contents">
 <!-- page title -->
-{{ partial "page-heading" .Params}}
+{{ if eq .Params.type "application" }}
+  <!-- 応募要項ページであれば、募集職種ラベルを表示する -->
+  {{ partial "application-heading" .Params.label }}
+{{ else }}
+  {{ partial "page-heading" .Params }}
+{{ end }}
 
 {{ if eq .Params.id "store" }}
 
@@ -24,35 +29,57 @@
 
   </div>
 </div><!--contents-->
-{{ else }}
+{{ else }}<!-- except store, others-->
 
-<article class="single">
-<section class="single-section">
+  {{ if eq .Params.id "recruit" }}
 
-{{ if eq .Params.id "recruit" }}
-
-  {{ partial "recruit-h2" .Params.topmenu }}
-
-  {{ partial "recruit-top-nav" . }}
+    <article class="single">
+    <section class="single-section single-section--recruit">
 
 
+    <div class="m-inner">
+      {{ if eq .Params.type "application" }}
+        <!-- 応募要項ページであれば、募集職種ラベルを表示する -->
+        {{ partial "application-table" .Params }}
 
-  {{ partial "4-up" .Params }}
+        {{ partial "page-heading" .Params.blurbs }}
 
-{{ end }}
+      {{ end }}
 
-<div class="m-inner">
-{{ if .Content }}
-  {{ .Content }}
-{{ end }}
-</div>
+      {{ if .Content }}
+        {{ .Content }}
+      {{ end }}
+    </div>
 
-</section>
+    </section>
 
-</article >
-</div><!--contents-->
+    </article >
+  </div><!--contents-->
 
-{{ partial "contact-box-medi" }}
+  {{ partial "contact-box-recruit" }}
+
+  {{ else }}
+
+
+    <article class="single">
+    <section class="single-section">
+
+
+    <div class="m-inner">
+    {{ if .Content }}
+      {{ .Content }}
+    {{ end }}
+    </div>
+
+    </section>
+
+    </article >
+
+  </div><!--contents-->
+
+  {{ partial "contact-box-medi" }}
+
+  {{ end }}
 
 {{ end }}
 

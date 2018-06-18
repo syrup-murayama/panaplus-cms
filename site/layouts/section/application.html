@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="l-contents">
+  {{ partial "page-heading" .Params}}
+
+  <article class="single">
+  <section class="single-section single-section--recruit">
+
+    <div class="m-inner">
+      {{ partial "recruit-application" . }}
+      {{ if .Content }}
+        {{ .Content }}
+      {{ end }}
+    </div>
+
+    </section>
+
+    </article >
+  </div><!--contents-->
+
+{{ end }}

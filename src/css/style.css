@@ -355,6 +355,9 @@ html {
 .u-tr {
   text-align: right; }
 
+strong {
+  font-weight: bold; }
+
 /*--font-size--*/
 .u-font-s {
   font-size: 1.2rem; }
@@ -763,6 +766,7 @@ html {
   .topics-unit__txt {
     margin-bottom: 1em; }
   .topics-unit__time {
+    font-size: 1.0rem;
     -webkit-align-self: center;
     align-self: center; }
   .topics-unit__tag {
@@ -1280,6 +1284,8 @@ html {
     @media all and (min-width: 768px) {
       .single-section {
         font-size: 1.6rem; } }
+    .single-section--recruit h2 {
+      color: #E6855E; }
     .single-section h2 {
       margin-bottom: 0.5em;
       font-size: 1.8rem;
