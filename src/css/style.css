@@ -1415,7 +1415,7 @@ strong {
       .single-section table th, .single-section table td {
         padding: 1em;
         border: #B3E5A1 solid 1px;
-        text-align: center; }
+        text-align: left; }
       .single-section table th {
         background: #EBF5EC;
         font-weight: bold; }
