@@ -233,9 +233,10 @@
         border-color: $yellow;
     }
     &--post{
-        margin-bottom: 0em;
+        margin-bottom: 0.2em;
         border-bottom: 5px solid $baseC;
         text-align: left;
+        text-indent: 0.2em;
     }
 }
 

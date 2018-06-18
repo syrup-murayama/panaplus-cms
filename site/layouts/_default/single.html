@@ -39,7 +39,8 @@
 
     <div class="m-inner">
       {{ if eq .Params.type "application" }}
-        <!-- 応募要項ページであれば、募集職種ラベルを表示する -->
+        <!-- 応募要項ページの記載内容 -->
+
         {{ partial "application-table" .Params }}
 
         {{ partial "page-heading" .Params.blurbs }}

@@ -586,9 +586,10 @@ strong {
   .title--user {
     border-color: #E4E80F; }
   .title--post {
-    margin-bottom: 0em;
+    margin-bottom: 0.2em;
     border-bottom: 5px solid #7FBF34;
-    text-align: left; }
+    text-align: left;
+    text-indent: 0.2em; }
 
 .description {
   margin-bottom: 2em;
@@ -1307,6 +1308,16 @@ strong {
         font-size: 1.6rem; } }
     .single-section--recruit h2 {
       color: #E6855E; }
+    .single-section h1 {
+      text-indent: 0.2em;
+      margin-bottom: 0.5em;
+      font-size: 1.8rem;
+      font-weight: bold;
+      border-bottom: 5px solid #7FBF34; }
+      @media all and (min-width: 768px) {
+        .single-section h1 {
+          margin-bottom: 1em;
+          font-size: 2rem; } }
     .single-section h2 {
       margin-bottom: 0.5em;
       font-size: 1.8rem;
@@ -1315,7 +1326,7 @@ strong {
       @media all and (min-width: 768px) {
         .single-section h2 {
           margin-bottom: 1em;
-          font-size: 2.4rem; } }
+          font-size: 2rem; } }
     .single-section p {
       margin-bottom: 4em;
       font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
