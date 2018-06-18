@@ -232,14 +232,40 @@
     &--user{
         border-color: $yellow;
     }
+    &--post{
+        margin-bottom: 0em;
+        border-bottom: 5px solid $baseC;
+        text-align: left;
+    }
 }
+
 .description{
     margin-bottom: 2em;
     font-weight: bold;
-    font-family: $fontBold;
+    font-family: $fontBase;
     font-size: 1.4rem;
+    text-align: center;
     @include pc($pch) {
         font-size: 1.6rem;
     }
-    text-align: center;
+    &--post{
+      text-align: left;
+    }
+
+}
+.post-data{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    font-size: $fontSS;
+    p{
+      margin-bottom: 18px;
+      margin-bottom: 1rem;
+      max-width: 576px;
+      max-width: 32rem;
+    }
 }

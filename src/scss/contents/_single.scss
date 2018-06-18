@@ -9,7 +9,7 @@
         text-align: center;
         img{
             @include pc($pch) {
-                width: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -35,7 +35,7 @@
 
         p{
             margin-bottom: 4em;
-            font-weight: bold;
+            //font-weight: bold;
             font-family: $fontBold;
         }
         ul{

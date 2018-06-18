@@ -16,7 +16,7 @@ html {
     border-top: 10px solid #7FBF34; }
     @media all and (min-width: 768px) {
       .l-header {
-        padding: 20px 0; } }
+        padding: 30px 0; } }
     .l-header-inner {
       padding: 0 3%; }
       @media all and (min-width: 768px) {
@@ -585,16 +585,37 @@ strong {
     border-color: #E6855E; }
   .title--user {
     border-color: #E4E80F; }
+  .title--post {
+    margin-bottom: 0em;
+    border-bottom: 5px solid #7FBF34;
+    text-align: left; }
 
 .description {
   margin-bottom: 2em;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
   font-size: 1.4rem;
   text-align: center; }
   @media all and (min-width: 768px) {
     .description {
       font-size: 1.6rem; } }
+  .description--post {
+    text-align: left; }
+
+.post-data {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+  font-size: 1rem; }
+  .post-data p {
+    margin-bottom: 18px;
+    margin-bottom: 1rem;
+    max-width: 576px;
+    max-width: 32rem; }
 
 /*-----------------------------------------------------
 5.page
@@ -1277,7 +1298,7 @@ strong {
     text-align: center; }
     @media all and (min-width: 768px) {
       .single-main img {
-        width: 100%; } }
+        max-width: 100%; } }
   .single-section {
     padding-bottom: 30px;
     font-size: 1.2rem; }
@@ -1297,7 +1318,6 @@ strong {
           font-size: 2.4rem; } }
     .single-section p {
       margin-bottom: 4em;
-      font-weight: bold;
       font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
     .single-section ul {
       margin-bottom: 2em; }
