@@ -1,6 +1,6 @@
 
 
- 
+
 //----------------------------------------------------------------------
 //ie11
 //----------------------------------------------------------------------
@@ -35,7 +35,24 @@ $(function() {
     var tabMenu = $('.js-tab-menu li');
     var tabWrap = $('.js-tab-wrap');
     var tabBox = $('.js-tab-cnt');
+
+    if (Cookie.get('index')) {
+      index = Cookie.get('index');
+      //$('li').removeClass('selected').eq(index).addClass('selected');
+      $(tabWrap).find(tabBox).hide().eq(index).show();
+    }
+
     $(tabMenu).click(function() {
+        if (index != $(tabMenu).index(this)) {
+          index = $(tabMenu).index(this);
+          // タブの内容
+          $(tabWrap).find(tabBox).hide().eq(index).fadeIn('fast');
+          // タブ
+          //$('li').removeClass('selected').eq(index).addClass('selected');
+
+          // 有効期限は1日（クッキーにはドメインをセットしない、ブラウザを閉じたら初期化）
+          Cookie.set('index', index, { expires: 1 });
+        }
         var index = $(tabMenu).index(this);
         $(tabWrap).find(tabBox).not(':eq(index)').css('display','none');
         $(tabWrap).find(tabBox).eq(index).css('display','block');
@@ -53,4 +70,4 @@ $(function() {
         var after = preTag[i].innerHTML.replace(/</g, '&lt;').replace(/>/g, '&gt;');
         preTag[i].innerHTML = after;
     }
-});    
+});

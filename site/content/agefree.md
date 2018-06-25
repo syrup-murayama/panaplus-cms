@@ -1,7 +1,7 @@
 ---
 title: "介護福祉用品レンタル・販売"
 id: medical
-image: /img/none.jpg
+image: /img/eyecatch_welfare.jpg
 heading: "介護福祉用品レンタル・販売"
 description: >-
   在宅医療をサポートするベッドや、車椅子、各種補助器具も扱っています。

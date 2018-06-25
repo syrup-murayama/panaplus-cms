@@ -1,7 +1,7 @@
 ---
 title: "介護保険適用の住宅改修"
 id: medical
-image: /img/none.jpg
+image: /img/eyecatch_carerenovation.jpg
 heading: "介護保険適用の住宅改修"
 description: >-
   介護保険が適用可能な住宅改修は、申請から計画、施工までトータルサポート
