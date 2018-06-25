@@ -36,8 +36,8 @@ $(function() {
     var tabWrap = $('.js-tab-wrap');
     var tabBox = $('.js-tab-cnt');
 
-    if (Cookie.get('index')) {
-      index = Cookie.get('index');
+    if (Cookies.get('index')) {
+      index = Cookies.get('index');
       //$('li').removeClass('selected').eq(index).addClass('selected');
       $(tabWrap).find(tabBox).hide().eq(index).show();
     }
@@ -51,7 +51,7 @@ $(function() {
           //$('li').removeClass('selected').eq(index).addClass('selected');
 
           // 有効期限は1日（クッキーにはドメインをセットしない、ブラウザを閉じたら初期化）
-          Cookie.set('index', index, { expires: 1 });
+          Cookies.set('index', index, { expires: 1 });
         }
         var index = $(tabMenu).index(this);
         $(tabWrap).find(tabBox).not(':eq(index)').css('display','none');
