@@ -12,7 +12,7 @@
           {{ .heading }}</div>
         {{ if .description }}
         <div class="description">
-            {{.description}}
+            {{ markdownify .description }}
         </div>
         {{ end }}
     </div>

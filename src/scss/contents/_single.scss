@@ -55,7 +55,7 @@
         ul{
             margin-bottom: 2em;
             li{
-                list-style: disc outside;
+                list-style: disc inside;
                 font-weight: bold;
                 font-family: $fontBold;
                 ul{
@@ -134,6 +134,24 @@
         &--recruit{
             h2{
                 color: $pink;
+            }
+        }
+        #instafeed {
+            display: -webkit-flex;
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap; /* 折り返し */
+            li{
+              position: relative;
+              list-style: none;
+              border-radius: 10px;
+              width: 48%;
+              height: auto;
+              margin: 1%;
+              overflow: hidden;
+              @include pc($pch) {
+                width: 31%;
+              }
             }
         }
     }

@@ -215,6 +215,36 @@
             padding: 20px 0 70px 0;
         }
     }
+    &-grid{
+      display: flex;
+    	flex-wrap: wrap;
+    	//justify-content: space-between;
+      &-box{
+        margin-bottom: 1rem;
+      	padding: 1rem;
+      	width: 49%;
+        @include pc($pch) {
+            width: 32%;
+            margin-bottom: 2rem;
+          	padding: 2rem;
+        }
+        img{
+          display: block;
+        	margin-bottom: 1rem;
+        	width: 100%;
+        	height: auto;
+          border-radius: 50%;
+        }
+        h2{
+          margin-bottom: 1rem;
+        	font-size: $fontL;
+        	text-align: center;
+        }
+        p{
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
 }
 
 .title{
