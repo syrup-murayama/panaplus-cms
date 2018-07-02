@@ -2,6 +2,11 @@
 <html>
   {{ partial "head" . }}
   <body>
+  <div id="loader-bg">
+    <div id="loading">
+      <img src="/img/image.gif">
+    </div>
+  </div>
   <div class="l-wrapper" id="wrapper">
     {{ partial "nav" . }}
     {{ block "main" . }}{{ end }}

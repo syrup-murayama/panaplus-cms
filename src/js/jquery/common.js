@@ -95,9 +95,13 @@ var userFeed = new Instafeed({
 //----------------------------------------------------------------------
 //ページ読み込み時にフェードインする
 //----------------------------------------------------------------------
-$('head').append(
-  '<style>body{display:none;}'
-  );
-  $(window).on("load", function() {
-  $('body').delay(300).fadeIn("slow");
+$(function() {
+  var h = $(window).height();
+  $('#wrapper').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+$(window).load(function () {
+  $('#loader-bg').delay(100).fadeOut(60);
+  $('#loader').delay(60).fadeOut(30);
+  $('#wrapper').css('display', 'block');
 });
