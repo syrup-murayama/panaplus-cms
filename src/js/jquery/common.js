@@ -105,3 +105,27 @@ $(window).load(function () {
   $('#loader').delay(60).fadeOut(30);
   $('#wrapper').css('display', 'block');
 });
+
+//----------------------------------------------------------------------
+//フォームの入力を拾ってAJAXで送信する。
+//----------------------------------------------------------------------
+$("#contact-regular").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("フォームの送信を受付ました");
+  });
+});
+
+//----------------------------------------------------------------------
+//フォームの入力を拾ってAJAXで送信する。
+//----------------------------------------------------------------------
+$("#contact-recruit").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("フォームの送信を受付ました");
+  });
+});
