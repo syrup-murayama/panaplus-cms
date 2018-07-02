@@ -1373,6 +1373,11 @@ strong {
     .contact-r-remarks {
       text-indent: 0; } }
 
+.contact-r-recaptcha {
+  margin: auto;
+  width: 300px;
+  max-resolution: 1rem; }
+
 .single {
   padding-top: 10px; }
   @media all and (min-width: 768px) {

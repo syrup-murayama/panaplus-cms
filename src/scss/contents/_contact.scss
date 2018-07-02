@@ -381,4 +381,9 @@
             text-indent: 0;
         }
     }
+    &-recaptcha{
+      margin: auto;
+      width: 300px;
+      max-resolution: 1rem;
+    }
 }
