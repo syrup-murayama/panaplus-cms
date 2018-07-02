@@ -1190,6 +1190,11 @@ strong {
     .contact-remarks {
       text-indent: 0; } }
 
+.contact-recaptcha {
+  margin: auto;
+  width: 300px;
+  margin-bottom: 3rem; }
+
 .contact-r-ttl {
   margin-bottom: 2.5em;
   border-bottom: solid 5px #E6855E;
@@ -1372,11 +1377,6 @@ strong {
   @media all and (min-width: 768px) {
     .contact-r-remarks {
       text-indent: 0; } }
-
-.contact-r-recaptcha {
-  margin: auto;
-  width: 300px;
-  margin-bottom: 3rem; }
 
 .single {
   padding-top: 10px; }

@@ -189,6 +189,11 @@
             text-indent: 0;
         }
     }
+    &-recaptcha{
+      margin: auto;
+      width: 300px;
+      margin-bottom: 3rem;
+    }
 }
 
 .contact-r{
@@ -380,10 +385,5 @@
         @include pc($pch) {
             text-indent: 0;
         }
-    }
-    &-recaptcha{
-      margin: auto;
-      width: 300px;
-      margin-bottom: 3rem;
     }
 }
