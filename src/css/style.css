@@ -1376,7 +1376,7 @@ strong {
 .contact-r-recaptcha {
   margin: auto;
   width: 300px;
-  max-resolution: 1rem; }
+  margin-bottom: 1rem; }
 
 .single {
   padding-top: 10px; }
