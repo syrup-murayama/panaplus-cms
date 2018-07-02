@@ -7,10 +7,10 @@
 	#{$direction}: -$size;
 	width: $size !important;
 	top: 0;
-	transition: $direction .5s; 
+	transition: $direction .5s;
 	&--show{
 		#{$direction}: 0;
-	}	
+	}
 }
 
 @mixin tab() {
@@ -39,7 +39,7 @@
 		  top: 0;
 		  right: 0;
 		  width: 100% !important;
-		  height: 100% !important;	  		
+		  height: 100% !important;
 	  	}
 	}
 }
@@ -55,7 +55,7 @@
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;			
+				height: 100%;
 			}
 	}
 }

@@ -1,17 +1,17 @@
-<form method="POST" netlify>
+<form method="POST" netlify-recaptcha netlify>
     <ul class="contact-list">
         <li>
-            <input type="text" name="Name" id="name" placeholder="お名前" >
+            <label>お名前: <input type="text" name="Name" id="name" placeholder="お名前" ></lavel>
         </li>
         <li>
-            <input type="tel" name="Tel" id="tel" placeholder="電話番号" >
+            <label>電話番号: <input type="tel" name="Tel" id="tel" placeholder="電話番号" ></lavel>
         </li>
         <li>
-            <input type="email" name="Email" id="email" placeholder="メールアドレス" >
+            <label>メールアドレス: <input type="email" name="Email" id="email" placeholder="メールアドレス" ></lavel>
             <!--<span>正しいメールアドレスを入力してください</span>-->
         </li>
         <li>
-            <input type="text" name="Organization" id="organization" placeholder="御社名・貴団体名等" >
+            <label>御社名・貴団体名等: <input type="text" name="Organization" id="organization" placeholder="御社名・貴団体名等" ></lavel>
         </li>
         <!--<li>
             <div class="contact-select">
@@ -25,7 +25,8 @@
             <textarea name="Message" placeholder="" id="message" ></textarea>
         </li>
     </ul>
-    
+
+    <div data-netlify-recaptcha></div>
 
     <button type="submit" class="contact-btn">送信する</button>
 </form>

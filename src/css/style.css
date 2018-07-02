@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*-------------------------------------------------------
-1.leyout 
+1.leyout
 --------------------------------------------------------*/
 html {
   font-family: -apple-system, BlinkMacSystemFont, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
@@ -1145,7 +1145,7 @@ strong {
       font-size: 1.4rem; } }
 
 .contact ::-webkit-input-placeholder {
-  color: #272025; }
+  color: #CCC; }
 
 .contact textarea {
   display: block;
@@ -1170,11 +1170,15 @@ strong {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  font-family: inherit; }
+  font-family: inherit;
+  transition-duration: 0.5s; }
   @media all and (min-width: 768px) {
     .contact-btn {
       max-width: 376px;
       margin: auto; } }
+
+.contact-btn:hover {
+  opacity: 0.6; }
 
 .contact-remarks {
   display: block;
@@ -1324,7 +1328,7 @@ strong {
       font-size: 1.4rem; } }
 
 .contact-r ::-webkit-input-placeholder {
-  color: #272025; }
+  color: #CCC; }
 
 .contact-r textarea {
   display: block;
@@ -1349,11 +1353,15 @@ strong {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  font-family: inherit; }
+  font-family: inherit;
+  transition-duration: 0.5s; }
   @media all and (min-width: 768px) {
     .contact-r-btn {
       max-width: 376px;
       margin: auto; } }
+
+.contact-r-btn:hover {
+  opacity: 0.6; }
 
 .contact-r-remarks {
   display: block;

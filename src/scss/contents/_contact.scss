@@ -144,7 +144,7 @@
         }
     }
     ::-webkit-input-placeholder {
-        color: #272025;
+        color: $gray2;
     }
     textarea{
         display: block;
@@ -170,10 +170,14 @@
         font-size: 1.8rem;
         font-weight: bold;
         font-family: inherit;
+        transition-duration: 0.5s;
         @include pc($pch) {
             max-width: 376px;
             margin: auto;
         }
+    }
+    &-btn:hover{
+      opacity:0.6;
     }
     &-remarks{
         display: block;
@@ -332,7 +336,7 @@
         }
     }
     ::-webkit-input-placeholder {
-        color: #272025;
+        color: $gray2;
     }
     textarea{
         display: block;
@@ -358,10 +362,14 @@
         font-size: 1.8rem;
         font-weight: bold;
         font-family: inherit;
+        transition-duration: 0.5s;
         @include pc($pch) {
             max-width: 376px;
             margin: auto;
         }
+    }
+    &-btn:hover{
+      opacity:0.6;
     }
     &-remarks{
         display: block;
