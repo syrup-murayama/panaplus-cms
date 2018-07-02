@@ -95,37 +95,37 @@ var userFeed = new Instafeed({
 //----------------------------------------------------------------------
 //ページ読み込み時にフェードインする
 //----------------------------------------------------------------------
-$(function() {
-  var h = $(window).height();
-  $('#wrapper').css('display','none');
-  $('#loader-bg ,#loader').height(h).css('display','block');
-});
-$(window).load(function () {
-  $('#loader-bg').delay(100).fadeOut(60);
-  $('#loader').delay(60).fadeOut(30);
-  $('#wrapper').css('display', 'block');
-});
+// $(function() {
+//   var h = $(window).height();
+//   $('#wrapper').css('display','none');
+//   $('#loader-bg ,#loader').height(h).css('display','block');
+// });
+// $(window).load(function () {
+//   $('#loader-bg').delay(100).fadeOut(60);
+//   $('#loader').delay(60).fadeOut(30);
+//   $('#wrapper').css('display', 'block');
+// });
 
-//----------------------------------------------------------------------
-//フォームの入力を拾ってAJAXで送信する。
-//----------------------------------------------------------------------
-$("#contact-regular").submit(function(e) {
-  e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("フォームの送信を受付ました");
-  });
-});
-
-//----------------------------------------------------------------------
-//フォームの入力を拾ってAJAXで送信する。
-//----------------------------------------------------------------------
-$("#contact-recruit").submit(function(e) {
-  e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("フォームの送信を受付ました");
-  });
-});
+// //----------------------------------------------------------------------
+// //フォームの入力を拾ってAJAXで送信する。
+// //----------------------------------------------------------------------
+// $("#contact-regular").submit(function(e) {
+//   e.preventDefault();
+//
+//   var $form = $(this);
+//   $.post($form.attr("action"), $form.serialize()).then(function() {
+//     alert("フォームの送信を受付ました");
+//   });
+// });
+//
+// //----------------------------------------------------------------------
+// //フォームの入力を拾ってAJAXで送信する。
+// //----------------------------------------------------------------------
+// $("#contact-recruit").submit(function(e) {
+//   e.preventDefault();
+//
+//   var $form = $(this);
+//   $.post($form.attr("action"), $form.serialize()).then(function() {
+//     alert("フォームの送信を受付ました");
+//   });
+// });
