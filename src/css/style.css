@@ -3,7 +3,7 @@
 1.leyout
 --------------------------------------------------------*/
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif;
+  font-family: sans-serif, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
   line-height: 1.6;
   font-size: 62.5%;
   color: #272025; }

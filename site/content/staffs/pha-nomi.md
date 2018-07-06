@@ -1,5 +1,5 @@
 ---
-title: "薬局一覧"
+title: "スタッフの声 | 能見店 笹岡晴子さん"
 id: recruit
 image: "../images/hs.jpg"
 heading: "スタッフの声 | 能見店 笹岡晴子さん"

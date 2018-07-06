@@ -1,5 +1,5 @@
 ---
-title: "薬局一覧"
+title: "スタッフの声 | 能見店 今井明日香さん"
 id: recruit
 image: "../images/ai.jpg"
 heading: "スタッフの声 | 能見店 今井明日香さん"

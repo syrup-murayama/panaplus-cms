@@ -1,5 +1,5 @@
 ---
-title: "薬局一覧"
+title: "スタッフの声 | 三ヶ根店 鎌田夏美さん"
 id: recruit
 image: "../images/nk.jpg"
 heading: "スタッフの声 | 三ヶ根店 鎌田夏美さん"

@@ -1,5 +1,5 @@
 ---
-title: "薬局一覧"
+title: "スタッフの声 | 三ヶ根店 山田賢文さん"
 id: recruit
 image: "../images/yy.jpg"
 heading: "スタッフの声 | 三ヶ根店 山田賢文さん"
