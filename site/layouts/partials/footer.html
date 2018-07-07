@@ -12,8 +12,17 @@
     </div>
 </footer><!--footer-->
 
+<!-- javascript -->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/js.cookie.js"></script>
+<script type="text/javascript" src="/js/instafeed.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+{{ if eq .File.Dir "pictures/" }}
+<script type="text/javascript" src="/js/instafeed.js"></script>
+{{ end }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="/app.js"></script>
 
-</body>  
+</body>
 
 </html>
