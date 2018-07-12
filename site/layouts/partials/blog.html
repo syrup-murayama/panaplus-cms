@@ -1,7 +1,7 @@
 <section class="topics">
 		<div class="m-block">
 				<h2 class="topics-ttl">お知らせ</h2>
-				{{ range first 3 (where .Data.Pages "Type" "post") }}
+				{{ range first 3 (where $.Data.Pages "Type" "post") }}
 				<div class="topics-unit">
 					{{ .Render "li" }}
 				</div><!--.topics-unit-->

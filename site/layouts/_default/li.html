@@ -1,5 +1,9 @@
 <a href="{{ .Permalink }}" ><h3 class="topics-unit__ttl">{{ .Title }}</h3>
-<p class="topics-unit__txt">{{ .Description }} …もっと読む</p></a>
+	<div class="topics-desc">
+		<p class="topics-unit__txt">{{ .Description }} …もっと読む</p>
+		<div class="topics-thumb thumb-{{ .UniqueID }}"></div>
+	</div>
+</a>
 <div class="topics-unit__row">
 		<p class="topics-unit__time">{{ .Date.Format "2006年01月02日" }}<p>
 		<!--<ul class="topics-unit__tag">

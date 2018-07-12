@@ -1,13 +1,19 @@
 @charset "utf-8";
 
 .main-img{
-    padding: 50px;
     -webkit-background-size: cover;
             background-size: cover;
+    background-position:center center;
     @include pc($pch) {
         margin-bottom: 50px;
-        padding: 100px 50px;
         text-align: center;
+    }
+    &__overlay{
+      background-color: rgba(255,255,255,0.8);
+      padding: 50px;
+      @include pc($pch) {
+        padding: 100px 50px;
+      }
     }
     &__ttl{
         margin-bottom: 0.5em;
@@ -49,7 +55,9 @@
                 background:$subC;
             }
             &--02{
-                background:$pink;
+                background:$pink url(/img/bk-category-nav-switch--02.png) no-repeat;
+                background-position: right 0px;
+                background-size:contain;
             }
         }
     }
@@ -64,7 +72,19 @@
     }
     &-list{
         margin-bottom: 1.5em;
+        @for $i from 1 through 5 {
+          &-r#{$i}{
+            background: $white url(/img/btnbkimg/r#{$i}.jpg) no-repeat right top/90px 60px !important;
+          }
+        }
+        @for $i from 1 through 7 {
+          &-m#{$i}{
+            background: #B3E5A1 url(/img/btnbkimg/m#{$i}.jpg) no-repeat right top/90px 60px !important;
+          }
+        }
+
     }
+
 }
 
 .greeting{
@@ -147,6 +167,13 @@
 }
 
 .topics{
+    &-thumb{
+  	  background-image: url(/img/default.jpg);
+  	  background-size: cover;
+  	  background-position: center;
+      flex: 0 0 8em;
+      margin-left: 1rem;
+  	}
     &-ttl{
         margin-bottom: 10px;
         text-align: center;
@@ -157,6 +184,9 @@
             margin-bottom: 20px;
             font-size: 2.4rem;
         }
+    }
+    &-desc{
+      @include flexbox();
     }
     &-unit{
         font-size: 1.2rem;
@@ -215,7 +245,7 @@
             }
         }
         &__row{
-            display: flex;
+            @include flexbox();
             -webkit-justify-content: space-between;
                     justify-content: space-between;
 

@@ -40,11 +40,6 @@ gulp.task("build-preview", ["css", "scss", "js", "jquery", "cms-assets", "hugo-p
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([
-      cssImport({from: "./src/css/main.css"}),
-      cssnext(),
-      cssnano(),
-    ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -106,7 +101,7 @@ gulp.task("server", ["hugo", "css", "scss", "jquery", "cms-assets", "js", "svg"]
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/css/**/*.css", ["hugo","css"]);
   gulp.watch("./src/scss/**/*.scss", ["scss"]);
   gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);

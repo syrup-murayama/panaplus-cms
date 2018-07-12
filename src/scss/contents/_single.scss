@@ -53,7 +53,7 @@
             font-family: $fontBold;
         }
         ul{
-            margin-bottom: 2em;
+            //margin-bottom: 2em;
             li{
                 list-style: disc inside;
                 font-weight: bold;
@@ -148,6 +148,7 @@
             display: flex;
             list-style: none;
             flex-wrap: wrap; /* 折り返し */
+            margin-bottom: 6rem;
             li{
               position: relative;
               list-style: none;
@@ -288,5 +289,19 @@
                 background: $yellow;
             }
         }
+    }
+    &-recruit{
+      padding: 2rem;
+      border-radius: 20px;
+      //border: 2px solid;
+      background: #B3E5A1;
+      &:before{
+        content: "";
+        background: $white url(/img/menu-top.png) no-repeat right top/cover;
+        @include pc($pch) {
+
+        }
+
+      }
     }
 }

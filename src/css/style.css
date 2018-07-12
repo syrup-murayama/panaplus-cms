@@ -680,14 +680,19 @@ strong {
 5.page
 ------------------------------------------------------*/
 .main-img {
-  padding: 50px;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
   @media all and (min-width: 768px) {
     .main-img {
       margin-bottom: 50px;
-      padding: 100px 50px;
       text-align: center; } }
+  .main-img__overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px; }
+    @media all and (min-width: 768px) {
+      .main-img__overlay {
+        padding: 100px 50px; } }
   .main-img__ttl {
     margin-bottom: 0.5em;
     color: #009250;
@@ -723,7 +728,9 @@ strong {
     .category-nav__switch--01 {
       background: #009250; }
     .category-nav__switch--02 {
-      background: #E6855E; }
+      background: #E6855E url(/img/bk-category-nav-switch--02.png) no-repeat;
+      background-position: right 0px;
+      background-size: contain; }
 
 .category-lead {
   margin-bottom: 2em;
@@ -736,6 +743,30 @@ strong {
 
 .category-list {
   margin-bottom: 1.5em; }
+  .category-list-r1 {
+    background: #FFFFFF url(/img/btnbkimg/r1.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-r2 {
+    background: #FFFFFF url(/img/btnbkimg/r2.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-r3 {
+    background: #FFFFFF url(/img/btnbkimg/r3.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-r4 {
+    background: #FFFFFF url(/img/btnbkimg/r4.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-r5 {
+    background: #FFFFFF url(/img/btnbkimg/r5.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m1 {
+    background: #B3E5A1 url(/img/btnbkimg/m1.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m2 {
+    background: #B3E5A1 url(/img/btnbkimg/m2.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m3 {
+    background: #B3E5A1 url(/img/btnbkimg/m3.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m4 {
+    background: #B3E5A1 url(/img/btnbkimg/m4.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m5 {
+    background: #B3E5A1 url(/img/btnbkimg/m5.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m6 {
+    background: #B3E5A1 url(/img/btnbkimg/m6.jpg) no-repeat right top/90px 60px !important; }
+  .category-list-m7 {
+    background: #B3E5A1 url(/img/btnbkimg/m7.jpg) no-repeat right top/90px 60px !important; }
 
 .greeting {
   max-width: 90%;
@@ -803,6 +834,13 @@ strong {
 .relation-list {
   margin-bottom: 1.5em; }
 
+.topics-thumb {
+  background-image: url(/img/default.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 8em;
+  margin-left: 1rem; }
+
 .topics-ttl {
   margin-bottom: 10px;
   text-align: center;
@@ -813,6 +851,13 @@ strong {
     .topics-ttl {
       margin-bottom: 20px;
       font-size: 2.4rem; } }
+
+.topics-desc {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
 
 .topics-unit {
   font-size: 1.2rem;
@@ -864,6 +909,10 @@ strong {
       .topics-unit__tag li a {
         font-weight: bold; }
   .topics-unit__row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between; }
@@ -960,6 +1009,9 @@ strong {
 @media all and (min-width: 768px) {
   .store-main {
     margin: auto; } }
+
+.store-info {
+  margin-top: 5rem; }
 
 .store-detail {
   text-align: center; }
@@ -1422,15 +1474,13 @@ strong {
     .single-section p {
       margin-bottom: 4em;
       font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
-    .single-section ul {
-      margin-bottom: 2em; }
-      .single-section ul li {
-        list-style: disc inside;
-        font-weight: bold;
-        font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
-        .single-section ul li ul {
-          margin-bottom: 0;
-          padding-left: 1.5em; }
+    .single-section ul li {
+      list-style: disc inside;
+      font-weight: bold;
+      font-family: -apple-system, BlinkMacSystemFont, "游ゴシック", "Yu Gothic", YuGothic, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif; }
+      .single-section ul li ul {
+        margin-bottom: 0;
+        padding-left: 1.5em; }
     .single-section ol {
       margin-bottom: 2em; }
       .single-section ol li {
@@ -1496,7 +1546,8 @@ strong {
       display: flex;
       list-style: none;
       flex-wrap: wrap;
-      /* 折り返し */ }
+      /* 折り返し */
+      margin-bottom: 6rem; }
       .single-section #instafeed li {
         position: relative;
         list-style: none;
@@ -1606,6 +1657,13 @@ strong {
       border-color: #E4E80F; }
     .single-links--yellow h3 {
       background: #E4E80F; }
+  .single-recruit {
+    padding: 2rem;
+    border-radius: 20px;
+    background: #B3E5A1; }
+    .single-recruit:before {
+      content: "";
+      background: #FFFFFF url(/img/menu-top.png) no-repeat right top/cover; }
 
 /*-----------------------------------------------------
 6.js

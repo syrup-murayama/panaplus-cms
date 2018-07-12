@@ -6,8 +6,13 @@
   <article class="single">
   <section class="single-section single-section--recruit">
     <div class="m-inner">
-      
+
     {{ partial "recruit-top-nav" .  }}
+    <div style="text-align:center">
+    <img src="/img/instagram.png" alt="instagram" style="max-width:100%;">
+  </div>
+
+    {{ partial "recruit-pics" }}
 
     {{ partial "page-heading" .Params.blurbs }}
 
@@ -15,11 +20,14 @@
     {{ if .Content }}
       {{ .Content }}
     {{ end }}
+
     </div>
 
     </section>
 
     </article >
   </div><!--contents-->
+
+{{ partial "contact-box-recruit" }}
 
 {{ end }}
