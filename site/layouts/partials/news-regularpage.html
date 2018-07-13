@@ -1,0 +1,10 @@
+<section class="topics">
+		<div class="m-block">
+				<h2 class="topics-ttl"><img src="/img/recruit_news.png" alt="news"></h2>
+				{{ range first 3 (where $.Site.Pages "Type" "post") }}
+				<div class="topics-unit">
+					{{ .Render "li" }}
+				</div><!--.topics-unit-->
+				{{ end }}
+		</div><!-- /.m-block -->
+</section><!-- /.topics -->
