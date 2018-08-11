@@ -24,6 +24,12 @@
 <script type="text/javascript" src="/js/instafeed.js"></script>
 {{ end }}
 {{ if .IsHome }}
+<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(function() {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
 <script type="text/javascript" src="/js/jquery.bgswitcher.js"></script>
 <script>
 $(function() {

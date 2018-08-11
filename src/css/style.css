@@ -96,6 +96,12 @@ html {
     @media all and (min-width: 768px) {
       .l-gnav ul li:last-child a {
         padding-right: 0; } }
+    .l-gnav ul > li:hover > a {
+      /*layer-1*/
+      color: #7FBF34; }
+    .l-gnav ul > li li:hover > a {
+      /*layer-2*/
+      color: #009250; }
   .l-contents {
     font-size: 1.6rem;
     color: #272025; }
@@ -688,22 +694,22 @@ strong {
       margin-bottom: 50px;
       text-align: center; } }
   .main-img__overlay {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 50px; }
     @media all and (min-width: 768px) {
       .main-img__overlay {
         padding: 100px 50px; } }
   .main-img__ttl {
     margin-bottom: 0.5em;
-    color: #009250;
+    color: #0F2060;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 4.0rem;
     font-weight: bold;
     line-height: 1.4; }
     @media all and (min-width: 768px) {
       .main-img__ttl {
         margin-bottom: 1em;
-        font-size: 4rem; } }
+        font-size: 5.6rem; } }
   .main-img__txt {
     margin-bottom: 1.5em;
     font-size: 1.3rem; }
@@ -769,7 +775,7 @@ strong {
     background: #B3E5A1 url(/img/btnbkimg/m7.jpg) no-repeat right top/90px 60px !important; }
 
 .greeting {
-  max-width: 90%;
+  max-width: 95%;
   margin: auto; }
   .greeting-ttl {
     margin-bottom: 1em;
@@ -782,18 +788,32 @@ strong {
   .greeting-cnt {
     margin: auto;
     padding: 2em 2em 1em 2em;
-    border: solid 1px #707070;
+    border: solid 1px #EBF5EC;
+    background-color: #EBF5EC;
     border-radius: 10px;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; }
     @media all and (min-width: 768px) {
       .greeting-cnt {
-        font-size: 1.6rem; } }
+        font-size: 1.6rem;
+        flex-wrap: nowrap; } }
+    .greeting-cnt__box {
+      flex-basis: 100%; }
+      @media all and (min-width: 768px) {
+        .greeting-cnt__box {
+          flex-basis: 70%; } }
     .greeting-cnt__name {
       overflow: hidden;
       margin-top: 2em; }
       @media all and (min-width: 768px) {
         .greeting-cnt__name {
-          margin-top: 4em; } }
+          margin-top: 0em; } }
+      .greeting-cnt__name img {
+        margin-bottom: 1rem; }
       .greeting-cnt__name dl {
         float: right; }
         .greeting-cnt__name dl dt {
@@ -983,6 +1003,26 @@ strong {
     .store-info-unit__btn--detail {
       background: #7FBF34;
       color: #fff; }
+
+.synergyMap img[usemap] {
+  max-width: 100%;
+  height: auto; }
+
+.synergyMap-ttl {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold; }
+  @media all and (min-width: 768px) {
+    .synergyMap-ttl {
+      font-size: 2.4rem; } }
+
+.synergyMap-pop {
+  transform: rotate(-5deg);
+  margin: 1rem; }
+  @media all and (min-width: 768px) {
+    .synergyMap-pop {
+      margin: 5rem; } }
 
 #loading {
   position: absolute;

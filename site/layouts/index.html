@@ -3,11 +3,17 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <div class="l-contents">
-{{ partial "tab-menu" .Params.tabs}}
-
 {{ partial "blog" . }}
 
-{{ partial "your-pharmacist" .Params.yp}}
+<!-- {{ partial "tab-menu" .Params.tabs}} -->
+
+{{ partial "greeting" . }}
+
+{{ partial "synergyMap" . }}
+
+{{ partial "tab-menu" . }}
+
+<!-- {{ partial "your-pharmacist" .Params.yp}} -->
 
 {{ partial "stores" .  }}
 

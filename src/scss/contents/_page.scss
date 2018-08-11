@@ -9,7 +9,7 @@
         text-align: center;
     }
     &__overlay{
-      background-color: rgba(255,255,255,0.8);
+      background-color: rgba(255,255,255,0.5);
       padding: 50px;
       @include pc($pch) {
         padding: 100px 50px;
@@ -17,14 +17,14 @@
     }
     &__ttl{
         margin-bottom: 0.5em;
-        color: $subC;
+        color: $kawaguchiBlue;
         text-align: center;
-        font-size: 3.2rem;
+        font-size: 4.0rem;
         font-weight: bold;
         line-height: 1.4;
         @include pc($pch) {
             margin-bottom: 1em;
-            font-size: 4rem;
+            font-size: 5.6rem;
         }
     }
     &__txt{
@@ -88,7 +88,7 @@
 }
 
 .greeting{
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     &-ttl{
         margin-bottom: 1em;
@@ -102,18 +102,34 @@
     &-cnt{
         margin: auto;
         padding: 2em 2em 1em 2em;
-        border: solid 1px #707070;
+        border: solid 1px $bcgreen;
+        background-color: $bcgreen;
         border-radius: 10px;
         font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
         @include pc($pch) {
             font-size: 1.6rem;
+            flex-wrap: nowrap;
+        }
+        &__box{
+          flex-basis: 100%;
+          @include pc($pch) {
+            flex-basis: 70%;
+          }
         }
 
         &__name{
             overflow: hidden;
             margin-top: 2em;
             @include pc($pch) {
-                margin-top: 4em;
+                margin-top: 0em;
+            }
+            img{
+              margin-bottom: 1rem;
             }
             dl{
                 float: right;
@@ -329,6 +345,29 @@
             }
         }
     }
+}
+
+.synergyMap{
+  img[usemap]{
+    max-width: 100%;
+    height: auto;
+  }
+  &-ttl{
+      margin-bottom: 1em;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      @include pc($pch) {
+          font-size: 2.4rem;
+      }
+  }
+  &-pop{
+    transform: rotate(-5deg);
+    margin: 1rem;
+    @include pc($pch) {
+        margin: 5rem;
+    }
+  }
 }
 
 #loading{
