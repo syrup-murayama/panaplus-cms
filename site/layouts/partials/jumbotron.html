@@ -1,7 +1,9 @@
 <section class="main-img bg-slider" style="background-image: url('{{.imageUrl}}')">
   <div class="main-img__overlay">
     <h2 class="main-img__ttl">TOTAL SUPPORT<br class="sp-only">イノベーター</h2>
+    {{ if .IsHome }}
     <p><a href="#stores" class="m-btn m-btn--size-m">店舗のご案内</a></p>
+    {{ end }}
   </div>
 </section>
 <!-- /.main-img -->

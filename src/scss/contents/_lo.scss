@@ -102,12 +102,7 @@
                     }
                 }
             }
-            > li:hover > a{ /*layer-1*/
-              color: $baseC;
-            }
-            > li li:hover > a{ /*layer-2*/
-              color: $subC;
-            }
+            
         }
     }
     &-contents{

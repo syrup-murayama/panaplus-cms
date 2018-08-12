@@ -10,7 +10,7 @@
       <ul>
         <li><a href="/">HOME</a></li>
         <li><a href="/stores/">店舗案内</a></li>
-        <li><a href="/aboutus/" aria-haspopup="true">薬局のこと</a>
+        <li><a href="#" aria-haspopup="true">薬局のこと</a>
           <ul>
               <li><a href="/homecare/">薬剤師の在宅医療</a></li>
               <li><a href="/study/">事例研究・講演発表</a></li>
@@ -45,18 +45,18 @@
   position: relative;
 }
 .l-gnav li a {
-  color: #fff;
+  color: #FFF;
   display: block;
 }
 .l-gnav li a:active {
-  background-color: #c00 !important;
+  background-color: #FFF !important;
 }
 .l-gnav span:after {
   width: 0;
   height: 0;
   border: 0.313em solid transparent; /* 5 */
 	border-bottom: none;
-	border-top-color: #efa585;
+	border-top-color: #009250;
 	content: '';
 	vertical-align: middle;
 	display: inline-block;
@@ -66,7 +66,7 @@
 /* first level */
 .l-gnav > ul {
 	height: 3.75em; /* 60 */
-	background-color: #e15a1f;
+	background-color: #7FBF34;
 }
 .l-gnav > ul > li {
 	width: 25%;
@@ -80,15 +80,15 @@
 	text-align: center;
 }
 .l-gnav > ul > li:not( :last-child ) > a {
-	border-right: 1px solid #cc470d;
+	border-right: 1px solid #009250;
 }
 .l-gnav > ul > li:hover > a,
 .l-gnav > ul:not( :hover ) > li.active > a {
-	background-color: #cc470d;
+	background-color: #7FBF34;
 }
 /* second level */
 .l-gnav li ul {
-	background-color: #cc470d;
+	background-color: #7FBF34;
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -103,12 +103,12 @@
 }
 .l-gnav li ul a {
 	font-size: 1.25em; /* 20 */
-	border-top: 1px solid #e15a1f;
+	border-top: 1px solid #009250;
 	padding: 0.75em; /* 15 (20) */
 }
 .l-gnav li ul li a:hover,
 .l-gnav li ul:not( :hover ) li.active a {
-	background-color: #e15a1f;
+	background-color: #7FBF34;
 }
 @media only screen and ( max-width: 62.5em ) { /* 1000 */
 	.l-gnav {
@@ -170,7 +170,7 @@
 	}
 	.l-gnav > ul > li:not( :last-child ) > a {
 		border-right: none;
-		border-bottom: 1px solid #cc470d;
+		border-bottom: 1px solid #009250;
 	}
 	/* second level */
 	.l-gnav li ul {

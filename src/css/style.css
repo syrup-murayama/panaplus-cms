@@ -96,12 +96,6 @@ html {
     @media all and (min-width: 768px) {
       .l-gnav ul li:last-child a {
         padding-right: 0; } }
-    .l-gnav ul > li:hover > a {
-      /*layer-1*/
-      color: #7FBF34; }
-    .l-gnav ul > li li:hover > a {
-      /*layer-2*/
-      color: #009250; }
   .l-contents {
     font-size: 1.6rem;
     color: #272025; }

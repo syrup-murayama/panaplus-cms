@@ -22,6 +22,18 @@
 {{ end }}
 {{ if eq .File.Dir "recruit/" }}
 <script type="text/javascript" src="/js/instafeed.js"></script>
+<script type="text/javascript" src="/js/jquery.bgswitcher.js"></script>
+<script>
+$(function() {
+    $('.bg-slider').bgSwitcher({
+        images: [
+          {{ range $.Site.Data.index.topBgPath }}
+            '{{ $.Site.Data.index.topBgDir }}{{ . }}',
+          {{ end }}
+        ], // 切り替える背景画像を指定
+    });
+});
+</script>
 {{ end }}
 {{ if .IsHome }}
 <script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>

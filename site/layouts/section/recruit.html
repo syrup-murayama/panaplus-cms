@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <div class="l-contents">
   {{ partial "page-heading" .Params}}
@@ -7,7 +8,6 @@
   <section class="single-section single-section--recruit">
     <div class="m-inner">
 
-    {{ partial "recruit-top-nav" .  }}
 
     {{ partial "news-regularpage" . }}
 
