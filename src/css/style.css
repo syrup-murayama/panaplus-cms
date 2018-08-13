@@ -140,7 +140,7 @@ html {
     .l-gnav {
       position: fixed;
       top: 0;
-      padding: 1rem;
+      padding: 2rem 1rem;
       width: 100%;
       z-index: 999999; }
       .l-gnav > a {
@@ -772,7 +772,6 @@ strong {
   background-position: center center; }
   @media all and (min-width: 768px) {
     .main-img {
-      margin-bottom: 50px;
       text-align: center; } }
   .main-img__overlay {
     background-color: rgba(255, 255, 255, 0.5);
