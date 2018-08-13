@@ -103,7 +103,7 @@ html {
       .l-contents {
         max-width: 990px;
         margin: auto;
-        padding: 0 15px; } }
+        padding: 5rem 15px 0; } }
   .l-line-space {
     padding: 20px 0 10px 0;
     background: #EBF5EC; }

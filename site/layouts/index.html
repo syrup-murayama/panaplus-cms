@@ -1,8 +1,11 @@
 {{ define "main" }}
 
+
+
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <div class="l-contents">
+
 {{ partial "blog" . }}
 
 <!-- {{ partial "tab-menu" .Params.tabs}} -->

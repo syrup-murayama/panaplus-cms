@@ -12,19 +12,19 @@ if( ua.match(/MSIE/) || ua.match(/Trident/) ) {
 }
 });
 //----------------------------------------------------------------------
-//pageTop
+//pageTop　a:targetを使用したnavメニュー導入に伴い使用停止した　2018-08-13 daisuke
 //----------------------------------------------------------------------
-
-$(function(){
-	$('a[href^=#]').click(function(){
-		var speed = 500;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$("html, body").animate({scrollTop:position}, speed, "swing");
-		return false;
-	});
-});
+//
+// $(function(){
+// 	$('a[href^=#]').click(function(){
+// 		var speed = 500;
+// 		var href= $(this).attr("href");
+// 		var target = $(href == "#" || href == "" ? 'html' : href);
+// 		var position = target.offset().top;
+// 		$("html, body").animate({scrollTop:position}, speed, "swing");
+// 		return false;
+// 	});
+// });
 
 
 //----------------------------------------------------------------------
@@ -83,6 +83,7 @@ $(function() {
   More informations:
   https://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly
 */
+
 ;(function( $, window, document, undefined )
 {
 	$.fn.doubleTapToGo = function( params )
